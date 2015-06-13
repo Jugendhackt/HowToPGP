@@ -15,13 +15,15 @@
 </div>
 <div id="question_level" class="question" style="display:none;">
     <h2>$(QUESTION_THREE)</h2>
-    
+
+    <form oninput="x.value=parseInt(a.value)" name="question_answers">
+        <input type="range" id="a" value="1" max="3" min="1">
+        <output name="x" for="a">1</output> 
+    </form>
     
     <br />
     <a href="javascript:submitQuestions();" class="button">$(START_DESCRIPTION)</a>
 </div>
-
-
 
 
 <form action="./index.php" method="get" name="question_answers" id="question_answers" style="display: none;">
