@@ -11,8 +11,21 @@ include("./strings/strings-$lang.php");
 } else if(@$_GET["page"] == "questions") {
     $content = file_get_contents("./templates/questions.html");
 } else if(@$_GET["page"] == "description") {
-    /* TODO */
-    $content = file_get_contents("./templates/description.html");
+    $content = "";
+    
+    $os     = @$_GET["os"];
+    $client = @$_GET["client"];
+    $level  = @$_GET["level"];
+
+    function add($file) {
+        global $content, $lang;
+        $content .= file_get_contents("./strings/descriptions-$lang/$file");
+    }
+    
+    // Fills $content with snippets:
+    include("./snippet-loader.php");
+    
+    $content = str_replace("{CONTENT}", $content, file_get_contents("./templates/description.html"));
 } else  if(@$_GET["page"] == "impressum") {
     $content = file_get_contents("./templates/impressum.html");
 } else if(@$_GET["page"] == "sources") {
@@ -20,8 +33,6 @@ include("./strings/strings-$lang.php");
 } else {
     $content = file_get_contents("./templates/error404.html"); 
 }
-
-
 
 
 $main_page = file_get_contents("./templates/main_page.html");
