@@ -1,6 +1,6 @@
 # HowToPGP
 
-Projekt von Jugend Hackt S�d
+Projekt von Jugend Hackt Süd
 
 Wir wollen PGP einfacher!
 
