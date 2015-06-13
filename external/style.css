@@ -8,7 +8,7 @@
 }
 
 body {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 10px;
     overflow-y: scroll;
@@ -39,7 +39,19 @@ h1 {
     background-color: #E9E5E5;
     background-color: rgba(230,230,230,0.8);
 }
-
+@media screen and (max-width: 780px) {
+    #main_img {
+        width: 100%;
+    }
+}
+#content.mainpage > div {
+    width: 400px; margin: 0 auto;
+}
+@media screen and (max-width: 440px) {
+    #content > div {
+        width: 100%;
+    }
+}
 a {
     text-decoration: none;
     color: #2222ff;
@@ -48,6 +60,11 @@ a {
     width: 800px;
     margin: 0 auto;
     margin-top: 100px;
+}
+@media screen and (max-width: 800px) {
+    #description {
+        width: 100%;
+    }
 }
 #description p{
     text-align: justify;
