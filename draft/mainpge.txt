@@ -1,0 +1,7 @@
+<?php
+
+
+$translations["PAGE_TITLE"]               = "PGP-HowTo";
+$translations["STARTPAGE_SECTION_1"]      = "Haben Sie schonmals von PGP-Verschlüsselung gehört? Ja? Nein?";
+$translations["STARTPAGE_SECTION_2"]      = "Auf dieser Seite wollen wir Ihnen erklären, was nun PGP genau bedeutet und wie es unter anderem Funktioniert. Dafür haben wir Ihnen einenn kleinen Fragebogen vorbereitet, welcher unter anderem verscheiedene Ausführungen beihaltet.";
+$translations["STARTPAGE_SECTION_3"]      = "PGP ist eine Verschlüsselungsmethode für Nachrichten. Die Mehtode wurde am 5. juni 1991 vin ";
