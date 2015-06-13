@@ -49,8 +49,8 @@ a {
 }
 a.button {
     text-align: center;
-    padding: 15px;
-    font-size: 23px;
+    padding: 10px;
+    margin-top: 20px;
     color: white;
     background-color: #2222cc;
     border-radius: 8px;
