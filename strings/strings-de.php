@@ -14,6 +14,9 @@ $translations["LINUX"]      = "Linux";
 $translations["WINDOWS"]      = "Windows";
 $translations["MACOS"]      = "Mac OS";
 $translations["QUESTION_TWO"]      = "Welches E-Mailprogramm";
-
+$translations["THUNDERBRID"]      = "Thunderbird";
+$translations["OUTLOOK"]      = "Outlook";
+$translations["MAILVELOPE"]      = "Mailvelope";
+$translations["MAIL"]      = "Mail (OSX)";
 
 
