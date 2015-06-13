@@ -37,7 +37,7 @@ h1 {
     top: 0px;
     font-size: 45px;
     background-color: #E9E5E5;
-    opacity: 0.8;
+    background-color: rgba(230,230,230,0.8);
 }
 
 a {
@@ -112,8 +112,8 @@ a.button {
     color: #555555;
     padding: 20px 0px;
     background-color: #E9E5E5;
+    background-color: rgba(230,230,230,0.8);
     border-top: 1px solid #cccccc;
-    opacity: 0.8;
 }
 #content_container {
     padding-bottom: 3em;
