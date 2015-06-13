@@ -40,10 +40,6 @@ a {
 #description p{
     text-align: justify;
     margin-bottom: 20px;
-    display: none;
-}
-#description h2{
-    display: none;
 }
 a.button {
     text-align: center;
@@ -105,5 +101,5 @@ a.button {
     border-top: 1px solid #cccccc;
 }
 #content_container {
-    padding-bottom:3em;
+    padding-bottom: 3em;
 }

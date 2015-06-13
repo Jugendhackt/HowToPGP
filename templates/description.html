@@ -1,4 +1,4 @@
-<div id="description">
+<div id="description" style="display: none;">
     <h2>1. Lorem Ipsum</h2>
     <p>$(LOREM_IPSUM)</p>
 
@@ -10,11 +10,6 @@
 </div>
 <script>
     setTimeout(function() {
-        $('#description p').each(function(i) {
-            $(this).delay((i++) * 500).show(500); 
-        });
-        $('#description h2').each(function(i) {
-            $(this).delay((i++) * 500).show(500);  
-        });
-    }, 200);
+        $('#description').slideDown(1000);
+    }, 500);
 </script>
