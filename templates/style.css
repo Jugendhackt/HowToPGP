@@ -123,7 +123,7 @@ a.button {
     padding-bottom: 3em;
 }
 #h3 {
-    font-size: 15px
+    font-size: 18px
 }
 #language {
     position: fixed;
@@ -133,4 +133,7 @@ a.button {
 }
 #language img{
     height: 20px;
+}
+#description img {
+    cursor: pointer;
 }

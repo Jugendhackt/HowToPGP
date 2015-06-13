@@ -4,5 +4,8 @@
 <script>
     setTimeout(function() {
         $('#description').slideDown(1000);
+        $('#description img').click(function(){
+            window.location.href = $(this).attr("src");
+        });
     }, 500);
 </script>
