@@ -1,7 +1,11 @@
 <?php
 
-$lang = "de";
+if(isset($_GET["lang"])) {
+    setcookie("lang", $_GET["lang"], time()+3600*24*100);
+    $_COOKIE["lang"] = $_GET["lang"];
+}
 
+$lang = in_array(@$_COOKIE["lang"],["de","en"]) ? @$_COOKIE["lang"] : "en";
 
 include("./strings/strings-$lang.php");
 
