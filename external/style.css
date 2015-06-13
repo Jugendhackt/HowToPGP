@@ -122,8 +122,9 @@ a.button {
 #content_container {
     padding-bottom: 3em;
 }
-#h3 {
-    font-size: 22px
+h3 {
+    font-size: 22px;
+    margin-top: 10px;
 }
 #language {
     position: fixed;
