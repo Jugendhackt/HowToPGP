@@ -6,25 +6,25 @@ $translations = array();
 # General page Strings
 $translations["PAGE_TITLE"]         = "PGP HowTo";
 $translations["COPYRIGHT"]          = "©: Jugend Hackt Süd";
-$translations["QUESTIONS_TITLE"]    = "Fragen";
-$translations["SECTION_1"]          = "Have you ever heart something about the PGP-encoding?";
-$translations["SECTION_2"]          = "On this page we will explane you, how you`ll use PGP on our Computer.<br> But bevore: some questions to give you specificial informaions.";
-$translations["CONTINUE"]           ="Continue";
+$translations["QUESTIONS_TITLE"]    = "Questions";
+$translations["SECTION_1"]          = "Have you ever heard something about the PGP-encoding?";
+$translations["SECTION_2"]          = "On this page we will explain how you can use PGP on your Computer.<br> But firs: some questions make it possible to deliver specific informaion.";
+$translations["CONTINUE"]           = "Continue";
 
 # Question
-$translations["QUESTIONS_DESCRIPTION"] = "Bevore starting, we`ll request you to give us some simply informations about your system for a specificial advise. Also we`re afraid if you`ll show us, how much time you have - so we can explane it more or less in detail.";
-$translations["QUESTION_ONE"]       = "Welches Betriebssystem verwenden Sie?";
+$translations["QUESTIONS_DESCRIPTION"] = "Bevore starting, we will request you to give us some simple information about your system. Also, we would be pleased if you would show us how much time you have - so we can explain it in more or less detail.";
+$translations["QUESTION_ONE"]       = "Which operationg system do you use?";
 $translations["LINUX"]              = "Linux";
 $translations["WINDOWS"]            = "Windows";
 $translations["MACOS"]              = "OSX";
 
-$translations["QUESTION_TWO"]       = "Welches E-Mail-Programm verwenden Sie?";
+$translations["QUESTION_TWO"]       = "Which mail client do you use?";
 $translations["THUNDERBIRD"]        = "Thunderbird";
     
-$translations["QUESTION_THREE"]     = "Welches Schwierigkeitsstufe?";
-$translations["SLIDER_VALUE_1"]     = "Ich stehe mit Computern auf Kriegsfuß";
-$translations["SLIDER_VALUE_2"]     = "Schnell zum Ziel";
-$translations["SLIDER_VALUE_3"]     = "Technisches Verständnis";
+$translations["QUESTION_THREE"]     = "Which level of difficulty?";
+$translations["SLIDER_VALUE_1"]     = "I am new to computing";
+$translations["SLIDER_VALUE_2"]     = "Fast to the goal";
+$translations["SLIDER_VALUE_3"]     = "Technical understanding";
 
-$translations["START_DESCRIPTION"]  = "Anleitung starten!";
+$translations["START_DESCRIPTION"]  = "Start tutorial!";
 
