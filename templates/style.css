@@ -31,7 +31,7 @@ h1 {
     text-decoration: none;
     border-bottom: 1px solid #cccccc;
     position: fixed;
-    padding: 20px 0px;
+    padding: 15px 0px;
     right: 0px;
     left: 0px;
     top: 0px;
@@ -53,7 +53,7 @@ a {
     margin-bottom: 20px;
 }
 #content {
-    margin-top: 100px;
+    margin-top: 90px;
 }
 a.button {
     text-align: center;
