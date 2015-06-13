@@ -59,3 +59,10 @@ a.button {
 	font-size: 30px;
 	color: black;
 }
+
+.question img {
+    width:  100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
