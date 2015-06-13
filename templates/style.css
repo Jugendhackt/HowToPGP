@@ -24,13 +24,16 @@ h1 {
         text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 #description {
     text-align: justify;
     margin-bottom: 20px;
 }
 a.button {
 	text-align: center;
-	text-decoration: None;
 	padding: 5px;
 	color: white;
 	background-color: #2222cc;
