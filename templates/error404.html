@@ -1,6 +1,14 @@
 <div id="error">
-<h2>Error 404</h2>
+<h2> $(ERROR404) </h2>
 <div id="lel" class="question" style="display:none;">
-<img src="http://upload.wikimedia.org/wikipedia/de/b/b4/Schnurtelephon.png" alt="lel/">
-    
+<img src="http://upload.wikimedia.org/wikipedia/de/b/b4/Schnurtelephon.png" alt="lel/ id"lel">  
 </div>
+<script>
+    $(document).keypress(function(event) {
+          userInput=userInput+String.fromCharCode(event.which);
+          if(userInput === "11833") {
+              $("#lel").show(1000)
+          }
+    });
+
+</script>
