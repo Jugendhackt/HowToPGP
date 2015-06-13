@@ -78,6 +78,9 @@ a.button {
     width: 400px;
     margin: 0 auto;
 }
+#error {
+padding-top: 75px;
+}
 
 .question img {
     width:  100px;
@@ -117,4 +120,7 @@ a.button {
 }
 #content_container {
     padding-bottom: 3em;
+}
+#h3 {
+    font-size: 15px
 }
