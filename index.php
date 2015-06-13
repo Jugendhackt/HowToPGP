@@ -8,6 +8,7 @@ if(isset($_GET["lang"])) {
 $lang = in_array(@$_COOKIE["lang"],["de","en"]) ? @$_COOKIE["lang"] : "en";
 
 include("./strings/strings-$lang.php");
+$translations["LANG"] = $lang;
 
 
  if(@$_GET["page"] == "") {
