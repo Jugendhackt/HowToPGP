@@ -11,6 +11,7 @@ body {
     width: 1000px;
     margin: 0 auto;
     padding: 10px;
+    overflow-y: scroll;
 }
 p {
     font-size: 20px;
@@ -33,8 +34,16 @@ a {
     text-decoration: none;
 }
 #description {
+    width: 800px;
+    margin: 0 auto;
+}
+#description p{
     text-align: justify;
     margin-bottom: 20px;
+    display: none;
+}
+#description h2{
+    display: none;
 }
 a.button {
     text-align: center;

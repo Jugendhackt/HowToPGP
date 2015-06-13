@@ -1,1 +1,20 @@
-Blubb
+<div id="description">
+    <h2>1. Lorem Ipsum</h2>
+    <p>$(LOREM_IPSUM)</p>
+
+    <h2>2. Lorem Ipsum</h2>
+    <p>$(LOREM_IPSUM)</p>
+    
+    <h2>3. Lorem Ipsum</h2>
+    <p>$(LOREM_IPSUM)</p>
+</div>
+<script>
+    setTimeout(function() {
+        $('#description p').each(function(i) {
+            $(this).delay((i++) * 500).show(500); 
+        });
+        $('#description h2').each(function(i) {
+            $(this).delay((i++) * 500).show(500);  
+        });
+    }, 200);
+</script>
