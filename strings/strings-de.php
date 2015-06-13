@@ -27,4 +27,5 @@ $translations["SLIDER_VALUE_2"]     = "Schnell zum Ziel";
 $translations["SLIDER_VALUE_3"]     = "Technisches Verständnis";
 
 $translations["START_DESCRIPTION"]  = "Anleitung starten!";
+$translations["ERROR404"]  = "Error 404 - Diese Seite existiert nicht!";
 
