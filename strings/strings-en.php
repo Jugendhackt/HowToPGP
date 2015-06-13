@@ -8,7 +8,7 @@ $translations["PAGE_TITLE"]         = "PGP HowTo";
 $translations["COPYRIGHT"]          = "©: Jugend Hackt Süd";
 $translations["QUESTIONS_TITLE"]    = "Questions";
 $translations["SECTION_1"]          = "Have you ever heard something about the PGP-encoding?";
-$translations["SECTION_2"]          = "On this page we will explain how you can use PGP on your Computer.<br> But firs: some questions make it possible to deliver specific informaion.";
+$translations["SECTION_2"]          = "On this page we will explain how you can use PGP on your Computer. But first: some questions make it possible to deliver specific informaion.";
 $translations["CONTINUE"]           = "Continue";
 $translation["SOURCES"]             ="Sources";
 # Question
