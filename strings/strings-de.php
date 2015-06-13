@@ -7,8 +7,8 @@ $translations = array();
 $translations["PAGE_TITLE"]         = "PGP HowTo";
 $translations["COPYRIGHT"]          = "©: Jugend Hackt Süd";
 $translations["QUESTIONS_TITLE"]    = "Fragen";
-$translations["SECTION_1"]          = "Haben Sie schonmals von PGP-Verschlüsselung gehört? Ja? Nein?";
-$translations["SECTION_2"]          = "Auf dieser Seite wollen wir Ihnen";
+$translations["SECTION_1"]          = "Haben Sie schonmals von PGP-Verschlüsselung gehört?";
+$translations["SECTION_2"]          = "Auf dieser Seite wollen wir Ihnen erklären, wie Sie bei Ihrem Computer die PGP-Verschlüsselung nutzen. <br> Doch zuvor: eine kleine Fragerunde, um rechnerspezifische Ergebnisse liefern zu können.";
 
 # Question
 $translations["QUESTIONS_DESCRIPTION"] = "Um für Sie eine personalisierte Anleitung erstellen zu können, brauchen wir ein paar Informationen zu Ihrem System und der Zeit die Sie zur Verfügung haben.";
