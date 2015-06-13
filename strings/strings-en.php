@@ -27,5 +27,5 @@ $translations["SLIDER_VALUE_2"]     = "Fast to the goal";
 $translations["SLIDER_VALUE_3"]     = "Technical understanding";
 
 $translations["START_DESCRIPTION"]  = "Start tutorial!";
-$translations["ERROR404"]  = "Error 404 - This Site does not exist";
-$translations["CONTACT_US"]  = "In case that you want to contact us, write us. Our Keys are down there.";
+$translations["ERROR404"]           = "Error 404 - This Site does not exist";
+$translations["CONTACT_US"]         = "In case that you want to contact us, drop us a mail. Our Keys are down there.";
