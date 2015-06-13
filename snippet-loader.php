@@ -6,7 +6,7 @@
  * 
  */
 
-if($os == "windows") {
+if($os == "windows"||$os =="osx") {
     add("W_Thunderbird_install.html");
 }
 else if ($os == "linux") {
@@ -15,6 +15,13 @@ else if ($os == "linux") {
 
 if($os =="windows"){
     add("W_GPG4Win.html");
+}
+else if($os =="osx"){
+    add("M_GPGTools.html");
+}
+
+if($level =="3"){
+    Add("GnuPG.html");
 }
 add("Thunderbird_Enigmail.html");
 
@@ -28,3 +35,6 @@ else{
 add("Enigmail_create_keys.html");
 add("test_email.html");
 add("Nutze_es_richtig.html");
+if($level=="3"){
+    add("web_of_thrust.html");
+}
