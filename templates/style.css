@@ -44,10 +44,11 @@ a {
 }
 a.button {
     text-align: center;
-    padding: 5px;
+    padding: 17px;
+    font-size: 23px;
     color: white;
     background-color: #2222cc;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 #title {
 	font-size: 30px;
