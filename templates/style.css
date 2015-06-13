@@ -20,8 +20,12 @@ html {
 h1 {
 	margin-bottom: 10px;
 	text-align: center;
-	font-color: #7C7C7C;
+	color: #7C7C7C;
         text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 #description {
@@ -30,7 +34,6 @@ h1 {
 }
 a.button {
 	text-align: center;
-	text-decoration: None;
 	padding: 5px;
 	color: white;
 	background-color: #2222cc;
