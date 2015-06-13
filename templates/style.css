@@ -72,3 +72,11 @@ a.button {
 .question img:hover {
  transform: scale(1.2);
 }
+#footer {
+    position:fixed;
+    bottom:0px;
+    allgin:center;
+
+#content_container {
+    padding-bottom:3em;
+}
