@@ -99,6 +99,7 @@ a.button {
     padding: 20px 0px;
     background-color: #E9E5E5;
     border-top: 1px solid #cccccc;
+    opacity: 0.9;
 }
 #content_container {
     padding-bottom: 3em;
