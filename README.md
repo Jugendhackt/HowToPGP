@@ -1,7 +1,6 @@
 # HowToPGP
 
-Penis höhö
-Projekt von Jugend Hackt Süd
+Projekt von Jugend Hackt Sï¿½d
 
 Wir wollen PGP einfacher!
 
