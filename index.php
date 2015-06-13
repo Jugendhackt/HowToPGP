@@ -1,16 +1,22 @@
 <?php
 
-include("./strings/strings-de.php");
+$lang = "de";
 
 
- if(@$_GET["page"] == "description") {
-    $content = file_get_contents("./templates/description.html");
+include("./strings/strings-$lang.php");
+
+
+ if(@$_GET["page"] == "") {
+    $content = file_get_contents("./templates/startpage.html");
 } else if(@$_GET["page"] == "questions") {
     $content = file_get_contents("./templates/questions.html");
-} else if(@$_GET["page"] == "impressum") {
+} else if(@$_GET["page"] == "description") {
+    /* TODO */
+    $content = file_get_contents("./templates/description.html");
+} else  if(@$_GET["page"] == "impressum") {
     $content = file_get_contents("./templates/impressum.html");
-} else if(@$_GET["page"] == "") {
-    $content = file_get_contents("./templates/startpage.html");
+} else if(@$_GET["page"] == "sources") {
+    $content = file_get_contents("./templates/sources.html");
 } else {
     $content = file_get_contents("./templates/error404.html"); 
 }
