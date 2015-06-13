@@ -25,7 +25,7 @@ html {
 h1 {
     margin-bottom: 10px;
     text-align: center;
-    color: #7C7C7C;
+    color: #555555;
     text-decoration: none;
 }
 
@@ -36,7 +36,7 @@ a {
 #footer {
     margin-top: 20px;
     font-size: 12px;
-    color: #7C7C7C;
+    color: #555555;
 }
 
 #description {
@@ -59,6 +59,13 @@ a.button {
 
 .question {
     margin-top: 20px;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+#questions_description {
+    width: 400px;
+    margin: 0 auto;
 }
 
 .question img {
@@ -66,9 +73,20 @@ a.button {
     height: 100px;
     margin: 10px;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .question img:hover {
  transform: scale(1.2);
+}
+
+#input_range {
+    width: 200px;
+    margin-top: 10px;
+}
+
+#range_output {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
 }
