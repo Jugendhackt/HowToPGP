@@ -1,9 +1,9 @@
 * {
-	margin: 0px;
-	padding: 0px;
-	font-family: "Helvetica", Arial, sans-serif;
-	color: #2B2B2B;
-	text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Helvetica", Arial, sans-serif;
+    color: #2B2B2B;
+    text-align: center;
 
 }
 
@@ -18,14 +18,24 @@ html {
 }
 
 h1 {
-	margin-bottom: 10px;
-	text-align: center;
-	color: #7C7C7C;
-        text-decoration: none;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #7C7C7C;
+    text-decoration: none;
 }
 
 a {
     text-decoration: none;
+}
+
+#footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #7C7C7C;
+}
+
+#footer a {
+    color: #7C7C7C;
 }
 
 #description {
@@ -33,9 +43,9 @@ a {
     margin-bottom: 20px;
 }
 a.button {
-	text-align: center;
-	padding: 5px;
-	color: white;
-	background-color: #2222cc;
-	border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #2222cc;
+    border-radius: 5px;
 }
