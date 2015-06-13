@@ -90,3 +90,11 @@ a.button {
     margin-bottom: 20px;
     color: #555;
 }
+#footer {
+    position:fixed;
+    bottom:0px;
+    allgin:center;
+
+#content_container {
+    padding-bottom:3em;
+}
