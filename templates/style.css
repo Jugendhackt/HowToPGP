@@ -39,19 +39,16 @@ a {
     color: #7C7C7C;
 }
 
-#footer a {
-    color: #7C7C7C;
-}
-
 #description {
     text-align: justify;
     margin-bottom: 20px;
 }
 a.button {
     text-align: center;
-    padding: 15px;
-    font-size: 23px;
+    padding: 10px;
+    margin-top: 20px;
     color: white;
+    font-size: 23px;
     background-color: #2222cc;
     border-radius: 8px;
 }
