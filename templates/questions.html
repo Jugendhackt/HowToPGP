@@ -9,10 +9,21 @@
     <img onclick="javascript:selectOS('linux');" src="./media/images/linux.png" />
 </div>
 <div id="question_client" class="question" style="display:none;">
-    <img src="./media/images/thunderbird.png" />
-    <img src="./media/images/thunderbird.png" />
-    <img src="./media/images/thunderbird.png" />
+    <img onclick="javascript:selectClient('thunderbird');" src="./media/images/thunderbird.png" />
 </div>
+<div id="question_level" class="question" style="display:none;">
+    
+</div>
+
+
+
+
+<form action="./index.php?site=description" name="question_answers" style="display: none;">
+    <input type="hidden" name="os" id="os">
+    <input type="hidden" name="client" id="client">
+    <input type="hidden" name="level" id="level">
+</form>
+
 
 <!--
 <form action="./index.php?site=description">
