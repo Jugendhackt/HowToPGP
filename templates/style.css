@@ -39,10 +39,6 @@ a {
     color: #7C7C7C;
 }
 
-#footer a {
-    color: #7C7C7C;
-}
-
 #description {
     text-align: justify;
     margin-bottom: 20px;
@@ -52,6 +48,7 @@ a.button {
     padding: 10px;
     margin-top: 20px;
     color: white;
+    font-size: 23px;
     background-color: #2222cc;
     border-radius: 8px;
 }
@@ -69,4 +66,9 @@ a.button {
     height: 100px;
     margin: 10px;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.question img:hover {
+ transform: scale(1.2);
 }
