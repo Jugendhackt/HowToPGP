@@ -4,7 +4,7 @@ include("./strings/strings-de.php");
 
 
 
-$content = file_get_contents("./templates/questions.html");
+$content = file_get_contents("./templates/startpage.html");
 
 
 
