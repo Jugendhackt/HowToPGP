@@ -1,61 +1,40 @@
-<h2>$(QUESTIONS_TITLE)</h2>
-<div id="questions_description">
-    $(QUESTIONS_DESCRIPTION)
-</div>
+<div id="content" style="display:none;">
 
-<div id="question_os" class="question">
-    <h2>$(QUESTION_ONE)</h2>
-    <img onclick="javascript:selectOS('windows');" src="./media/images/windows.png" />
-    <img onclick="javascript:selectOS('osx');" src="./media/images/osx.png" />
-    <img onclick="javascript:selectOS('linux');" src="./media/images/linux.png" />
-</div>
-<div id="question_client" class="question" style="display:none;">
-    <h2>$(QUESTION_TWO)</h2>
-    <img onclick="javascript:selectClient('thunderbird');" src="./media/images/thunderbird.png" />
-</div>
-<div id="question_level" class="question" style="display:none;">
-    <h2>$(QUESTION_THREE)</h2>
+    <div id="questions_description">
+        $(QUESTIONS_DESCRIPTION)
+    </div>
 
-    <form oninput="x.value=parseInt(a.value)" name="question_answers">
-        <input type="range" id="a" value="1" max="3" min="1">
-        <output name="x" for="a">1</output> 
+    <div id="question_os" class="question">
+        <h2>$(QUESTION_ONE)</h2>
+        <img onclick="javascript:selectOS('windows');" src="./media/images/windows.png" />
+        <img onclick="javascript:selectOS('osx');" src="./media/images/osx.png" />
+        <img onclick="javascript:selectOS('linux');" src="./media/images/linux.png" />
+    </div>
+    <div id="question_client" class="question" style="display:none;">
+        <h2>$(QUESTION_TWO)</h2>
+        <img onclick="javascript:selectClient('thunderbird');" src="./media/images/thunderbird.png" />
+    </div>
+    <div id="question_level" class="question" style="display:none;">
+        <h2>$(QUESTION_THREE)</h2>
+
+        <form oninput="if(input_range.value=='1')range_output.innerHTML='$(SLIDER_VALUE_1)';if(input_range.value=='2')range_output.innerHTML='$(SLIDER_VALUE_2)';if(input_range.value=='3')range_output.innerHTML='$(SLIDER_VALUE_3)';" name="question_answers">
+            <input type="range" id="input_range" value="2" max="3" min="1">
+            <p id="range_output">$(SLIDER_VALUE_2)</p> 
+        </form>
+
+        <br />
+        <a href="javascript:submitQuestions();" class="button">$(START_DESCRIPTION)</a>
+        <br />
+        <br />
+    </div>
+
+
+    <form action="./index.php" method="get" name="question_answers" id="question_answers" style="display: none;">
+        <input type="hidden" name="page" id="site" value="description">
+        <input type="hidden" name="os" id="field_os">
+        <input type="hidden" name="client" id="field_client">
+        <input type="hidden" name="level" id="field_level">
     </form>
-    
-    <br />
-    <a href="javascript:submitQuestions();" class="button">$(START_DESCRIPTION)</a>
+
 </div>
-
-
-<form action="./index.php" method="get" name="question_answers" id="question_answers" style="display: none;">
-    <input type="hidden" name="page" id="site" value="description">
-    <input type="hidden" name="os" id="field_os">
-    <input type="hidden" name="client" id="field_client">
-    <input type="hidden" name="level" id="field_level">
-</form>
-
-
-<!--
-<form action="./index.php?site=description">
-    <div id="questions_input1">
-        $(QUESTION_ONE)
-        <fieldset>
-             <input type="radio" id="L" name="OperationSystem" value="L"><label for="L">$(LINUX)</label><br> 
-             <input type="radio" id="W" name="OperationSystem" value="W"><label for="W">$(WINDOWS)</label><br> 
-             <input type="radio" id="M" name="OperationSystem" value="M"><label for="M">$(MACOS)</label><br> 
-        </fieldset>
-    </div>
-</form>
-<form action="./index.php?site=description">
-      <div id="questions_input2">
-        $(QUESTION_TWO)
-        <fieldset>
-             <input type="radio" id="Th" name="mailclient" value="Th"><label for="Th">$(THUNDERBIRD)</label><br> 
-             <input type="radio" id="Ou" name="mailclient" value="Ou"><label for="Ou">$(OUTLOOK)</label><br> 
-             <input type="radio" id="Mv" name="mailclient" value="Mv"><label for="Mv">$(MAILVELOPE)</label><br> 
-             <input type="radio" id="Ma" name="mailclient" value="Ma"><label for="Ma">$(MAIL)</label><br> 
-             <input type="radio" id="Wm" name="mailclient" value="Wm"><label for="Wm">$(WINDOWSLIVEMAIL)</label><br> 
-             
-        </fieldset>
-    </div>
-</form>
--->
+<script>setTimeout(function() {$("#content").show(500);}, 200);</script>

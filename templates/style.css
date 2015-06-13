@@ -11,6 +11,7 @@ body {
     width: 1000px;
     margin: 0 auto;
     padding: 10px;
+    overflow-y: scroll;
 }
 p {
     font-size: 20px;
@@ -25,21 +26,18 @@ html {
 h1 {
     margin-bottom: 10px;
     text-align: center;
-    color: #7C7C7C;
+    color: black;
     text-decoration: none;
 }
 
 a {
     text-decoration: none;
 }
-
-#footer {
-    margin-top: 20px;
-    font-size: 12px;
-    color: #7C7C7C;
-}
-
 #description {
+    width: 800px;
+    margin: 0 auto;
+}
+#description p{
     text-align: justify;
     margin-bottom: 20px;
 }
@@ -56,9 +54,15 @@ a.button {
 	font-size: 30px;
 	color: black;
 }
-
 .question {
     margin-top: 20px;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+#questions_description {
+    width: 400px;
+    margin: 0 auto;
 }
 
 .question img {
@@ -66,17 +70,36 @@ a.button {
     height: 100px;
     margin: 10px;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .question img:hover {
  transform: scale(1.2);
 }
+
+#input_range {
+    width: 200px;
+    margin-top: 10px;
+}
+
+#range_output {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+}
 #footer {
     position:fixed;
     bottom:0px;
-    allgin:center;
-
+    text-align:center;
+    left:0px;
+    right:0px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #555555;
+    padding: 20px 0px;
+    background-color: #E9E5E5;
+    border-top: 1px solid #cccccc;
+}
 #content_container {
-    padding-bottom:3em;
+    padding-bottom: 3em;
 }

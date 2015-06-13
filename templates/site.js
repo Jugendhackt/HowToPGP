@@ -10,9 +10,16 @@ function selectClient(client) {
 }
 function submitQuestions() {
     $("#question_level").hide(500);
-    $("#field_level").val("");
+    $("#field_level").val($("#input_range").val());
     
     setTimeout(function() {
         $("#question_answers").submit();
-    }, 800);
+    }, 450);
+}
+function switchTo(href) {
+    $("#content").hide(500);
+    
+    setTimeout(function() {
+        window.location.href=href;
+    }, 600);
 }
