@@ -20,5 +20,6 @@ $translations["OUTLOOK"]      = "Outlook";
 $translations["MAILVELOPE"]      = "Mailvelope";
 $translations["MAIL"]      = "Mail (OSX)";
 $translations["WINDOWSLIVEMAIL"]      = "Windows Live Mail";
+$translations["QUESTION_THREE"]      = "Welches Schwierigkeitsstufe?";
 
 
