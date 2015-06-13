@@ -15,6 +15,9 @@ body {
 p {
     font-size: 20px;
 }
+p.justify {
+    text-align: justify;
+}
 html {
     background: #E9E5E5;
 }
