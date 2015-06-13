@@ -124,3 +124,13 @@ padding-top: 75px;
 #h3 {
     font-size: 15px
 }
+#language {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background: #555;
+    padding: 10px;
+}
+#language img{
+    height: 20px;
+}
