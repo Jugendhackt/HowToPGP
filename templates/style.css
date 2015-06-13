@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Trebuchet MS", Arial, Helvetica,sans-serif;
+}
+
+body {
+    width: 1000px;
+    background: #eeeeee;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+html {
+    background: #ffffff;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#description {
+    text-align: justify;
+    margin-bottom: 20px;
+}
