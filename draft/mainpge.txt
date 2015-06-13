@@ -2,6 +2,9 @@
 
 
 $translations["PAGE_TITLE"]               = "PGP-HowTo";
-$translations["STARTPAGE_SECTION_1"]      = "Haben Sie schonmals von PGP-Verschl�sselung geh�rt? Ja? Nein?";
-$translations["STARTPAGE_SECTION_2"]      = "Auf dieser Seite wollen wir Ihnen erkl�ren, was nun PGP genau bedeutet und wie es unter anderem Funktioniert. Daf�r haben wir Ihnen einenn kleinen Fragebogen vorbereitet, welcher unter anderem verscheiedene Ausf�hrungen beihaltet.";
-$translations["STARTPAGE_SECTION_3"]      = "PGP ist eine Verschl�sselungsmethode f�r Nachrichten. Die Mehtode wurde am 5. juni 1991 vin ";
+$translations["STARTPAGE_SECTION_1"]      = "Haben Sie schonmals von PGP-Verschlüsselung gehört? Ja? Nein?";
+$translations["STARTPAGE_SECTION_2"]      = "Auf dieser Seite wollen wir Ihnen erklären, was nun PGP genau bedeutet und wie es unter anderem Funktioniert. Dafür haben wir Ihnen einenn kleinen Fragebogen vorbereitet, welcher unter anderem verscheiedene Ausführungen beihaltet.";
+$translations["STARTPAGE_SECTION_3"]      = "PGP ist eine Verschlüsselungsmethode für Nachrichten. Die Mehtode wurde am 5. juni 1991 von einem Amerikaner entwickelt und steht für "Pretty Good Privancity" - bedeutet eine verhältnismäßig sichere Mehtode um Nachrichten end-to-end zu verschlüsseln. Anscheinend soll es so sicher sein, dass sogar der Amerikanische Geheimdienst keine Möglichkeit hat, diesen Code auszulesen.";
+$translations["STARTPAGE_SECTION_4"]      = "Aber wie funktioniert dieses ganze System und die Verschlüsselungstechnik?";
+$translations["STARTPAGE_SECTION_5"]      = "Im Normalfall (z.B. bei E-Mails) wird ein Schlüssel verwendet, um diese Mail zu verschlüsseln. Dies ist eine unsichere Mehtode, da der Schlüssel einfachst ausgelesen werden kann und somit der komplette Mailverkehr ausgelesen werden kann.";
+$translations["STARTPAGE_SECTION_6"]      = "Im Vergleich zu der "normalen" Verschlüsselung verwenden PGP-Verschlüsselungen 2 unterschiedliche Codes, welche in irgendeiner hochmathemathischen zusammen hängen. Ein Schlüssel steht ausschließlich dem privaten gebrauch zur verfügung, der andere ist öffentlich. 
