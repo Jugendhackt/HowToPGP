@@ -2,10 +2,21 @@
 <div id="questions_description">
             $(QUESTIONS_DESCRIPTION)
         </div>
-<form action="radio.html">
-    <div id="questions_input">
+<form action="./index.php?site=description">
+    <div id="questions_input1">
         $(QUESTION_ONE)
-        
+        <fieldset>
+             <input type="radio" id="L" name="OperationSystem" value="L"><label for="L">$(LINUX)</label><br> 
+             <input type="radio" id="W" name="OperationSystem" value="W"><label for="W">$(WINDOWS)</label><br> 
+             <input type="radio" id="M" name="OperationSystem" value="M"><label for="M">$(MACOS)</label><br> 
+        </fieldset>
     </div>
-    
+      <div id="questions_input2">
+        $(QUESTION_TWO)
+        <fieldset>
+             <input type="radio" id="L" name="OperationSystem" value="L"><label for="L">$(LINUX)</label><br> 
+             <input type="radio" id="W" name="OperationSystem" value="W"><label for="W">$(WINDOWS)</label><br> 
+             <input type="radio" id="M" name="OperationSystem" value="M"><label for="M">$(MACOS)</label><br> 
+        </fieldset>
+    </div>  
 </form>

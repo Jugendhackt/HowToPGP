@@ -7,6 +7,13 @@ $translations["LOREM_IPSUM"]    = "Blah blah... Text... Lorem ipsum dolor sit am
 $translations["PAGE_TITLE"]     = "PGP-HowTo";
 $translations["QUESTIONS_TITLE"]     = "Fragen";
 $translations["QUESTIONS_DESCRIPTION"]     = "Um für Sie eine personalisierte Anleitung erstellen zu können, brauchen wir ein paar Informationen zu Ihrem System und der Zeit die Sie zur Verfügung haben.";
-$translations["QUESTIONS_DESCRIPTION"]     = "Um für Sie eine personalisierte Anleitung erstellen zu können, brauchen wir ein paar Informationen zu Ihrem System und der Zeit die Sie zur Verfügung haben.";
+$translations["SECTION_1"]      = "Haben Sie schonmals von PGP-Verschlüsselung gehört? Ja? Nein?";
+$translations["SECTION_2"]      = "Auf dieser Seite wollen wir Ihnen";
+$translations["QUESTION_ONE"]      = "Welches Betriebssystem verwenden Sie?";
+$translations["LINUX"]      = "Linux";
+$translations["WINDOWS"]      = "Windows";
+$translations["MACOS"]      = "Mac OS";
+$translations["QUESTION_TWO"]      = "Welches E-Mailprogramm";
 
-?>
+
+
