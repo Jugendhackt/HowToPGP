@@ -57,6 +57,8 @@ a.button {
 	color: black;
 }
 
+<<<<<<< HEAD
+=======
 .question {
     margin-top: 20px;
     background: #f2f2f2;
@@ -94,6 +96,7 @@ a.button {
     position:fixed;
     bottom:0px;
     allgin:center;
+}
 
 #content_container {
     padding-bottom:3em;
