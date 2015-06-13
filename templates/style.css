@@ -12,7 +12,9 @@ body {
     margin: 0 auto;
     padding: 10px;
 }
-
+p {
+    font-size: 20px;
+}
 html {
     background: #E9E5E5;
 }
@@ -44,11 +46,11 @@ a {
 }
 a.button {
     text-align: center;
-    padding: 17px;
+    padding: 15px;
     font-size: 23px;
     color: white;
     background-color: #2222cc;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 #title {
 	font-size: 30px;
