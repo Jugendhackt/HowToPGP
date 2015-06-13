@@ -14,5 +14,12 @@ function submitQuestions() {
     
     setTimeout(function() {
         $("#question_answers").submit();
+    }, 450);
+}
+function switchTo(href) {
+    $("#content").hide(500);
+    
+    setTimeout(function() {
+        window.location.href=href;
     }, 600);
 }
