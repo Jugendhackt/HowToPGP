@@ -3,13 +3,13 @@
 include("./strings/strings-de.php");
 
 
- if($_GET["page"] == "description") {
+ if(@$_GET["page"] == "description") {
     $content = file_get_contents("./templates/description.html");
-} else if($_GET["page"] == "questions") {
+} else if(@$_GET["page"] == "questions") {
     $content = file_get_contents("./templates/questions.html");
-} else if($_GET["page"] == "impressum") {
+} else if(@$_GET["page"] == "impressum") {
     $content = file_get_contents("./templates/impressum.html");
-} else if($_GET["page"] == "") {
+} else if(@$_GET["page"] == "") {
     $content = file_get_contents("./templates/startpage.html");
 } else {
     $content = file_get_contents("./templates/error404.html"); 
