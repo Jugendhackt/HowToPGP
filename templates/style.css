@@ -1,25 +1,32 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Trebuchet MS", Arial, Helvetica,sans-serif;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Helvetica", Arial, sans-serif;
+	color: #2B2B2B;
+	text-align: center;
+
 }
 
 body {
     width: 1000px;
-    background: #eeeeee;
     margin: 0 auto;
     padding: 10px;
 }
 
 html {
-    background: #ffffff;
+    background: #E9E5E5;
 }
 
 h1 {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-color: #7C7C7C;
 }
 
 #description {
     text-align: justify;
     margin-bottom: 20px;
+}
+#code {
+	
 }
