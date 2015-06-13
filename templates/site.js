@@ -11,5 +11,8 @@ function selectClient(client) {
 function submitQuestions() {
     $("#question_level").hide(500);
     $("#field_level").val("");
-    $("#question_answers").submit();
+    
+    setTimeout(function() {
+        $("#question_answers").submit();
+    }, 800);
 }

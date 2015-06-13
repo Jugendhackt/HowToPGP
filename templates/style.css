@@ -60,6 +60,10 @@ a.button {
 	color: black;
 }
 
+.question {
+    margin-top: 20px;
+}
+
 .question img {
     width:  100px;
     height: 100px;
