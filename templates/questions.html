@@ -16,15 +16,19 @@
 <div id="question_level" class="question" style="display:none;">
     <h2>$(QUESTION_THREE)</h2>
     
+    
+    <br />
+    <a href="javascript:submitQuestions();" class="button">$(START_DESCRIPTION)</a>
 </div>
 
 
 
 
-<form action="./index.php?site=description" name="question_answers" style="display: none;">
-    <input type="hidden" name="os" id="os">
-    <input type="hidden" name="client" id="client">
-    <input type="hidden" name="level" id="level">
+<form action="./index.php" method="get" name="question_answers" id="question_answers" style="display: none;">
+    <input type="hidden" name="page" id="site" value="description">
+    <input type="hidden" name="os" id="field_os">
+    <input type="hidden" name="client" id="field_client">
+    <input type="hidden" name="level" id="field_level">
 </form>
 
 
