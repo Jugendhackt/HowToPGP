@@ -16,9 +16,12 @@
 <div id="question_level" class="question" style="display:none;">
     <h2>$(QUESTION_THREE)</h2>
     
+    <form oninput="x.value=parseInt(a.value)" name="question_answers">
+        <input type="range" id="a" value="1" max="3" min="1">
+        <output name="x" for="a">1</output> 
+    </form>
+    
 </div>
-
-
 
 
 <form action="./index.php?site=description" name="question_answers" style="display: none;">
@@ -26,30 +29,3 @@
     <input type="hidden" name="client" id="client">
     <input type="hidden" name="level" id="level">
 </form>
-
-
-<!--
-<form action="./index.php?site=description">
-    <div id="questions_input1">
-        $(QUESTION_ONE)
-        <fieldset>
-             <input type="radio" id="L" name="OperationSystem" value="L"><label for="L">$(LINUX)</label><br> 
-             <input type="radio" id="W" name="OperationSystem" value="W"><label for="W">$(WINDOWS)</label><br> 
-             <input type="radio" id="M" name="OperationSystem" value="M"><label for="M">$(MACOS)</label><br> 
-        </fieldset>
-    </div>
-</form>
-<form action="./index.php?site=description">
-      <div id="questions_input2">
-        $(QUESTION_TWO)
-        <fieldset>
-             <input type="radio" id="Th" name="mailclient" value="Th"><label for="Th">$(THUNDERBIRD)</label><br> 
-             <input type="radio" id="Ou" name="mailclient" value="Ou"><label for="Ou">$(OUTLOOK)</label><br> 
-             <input type="radio" id="Mv" name="mailclient" value="Mv"><label for="Mv">$(MAILVELOPE)</label><br> 
-             <input type="radio" id="Ma" name="mailclient" value="Ma"><label for="Ma">$(MAIL)</label><br> 
-             <input type="radio" id="Wm" name="mailclient" value="Wm"><label for="Wm">$(WINDOWSLIVEMAIL)</label><br> 
-             
-        </fieldset>
-    </div>
-</form>
--->
