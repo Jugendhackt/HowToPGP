@@ -1,2 +1,9 @@
-blub
+<h3>Wie funktioniert asymmertische Verschlüsselung</h3>
+<p/>PGP ist ein asymmetrisches Verschlüsselungsverfahren, also ein kryptographisches Verfahren, um mit einem öffentlichen Schlüssel einen Klartext in einen Geheimtext umzuwandeln, aus dem der Klartext mit einem geheimen Schlüssel wieder gewonnen werden kann.<br/>
+
+Um GnuPG zu verwenden, benötigt man einen öffentlichen und einen privaten Schlüssel (beide bilden ein Schlüsselpaar). Jeder Schlüssel ist eine sehr große Zahl und ist einzigartig. Beide Schlüssel sind mit einer mathematischen Funktion verbunden. <br/>Funktionen, bei denen eine Richtung leicht, die andere schwierig zu berechnen ist, bezeichnet man als Einwegfunktionen (engl. one-way function). Beispielsweise ist nach aktuellem Wissensstand die Faktorisierung einer großen Zahl, also ihre Zerlegung in ihre Primfaktoren, sehr aufwändig, während das Erzeugen einer Zahl durch Multiplikation von Primzahlen recht einfach ist. Spezielle Einwegfunktionen sind Falltürfunktionen (engl. trapdoor one-way function), die mit Hilfe einer Zusatzinformation auch rückwärts leicht zu berechnen sind. Bei PGP ist dein öffentlicher Schlüssel die Falltüre. 
+</p>
+
+<p>Dein öffentlicher Schlüssel ist nicht wie ein Hausschlüssel, da er im Internet auf einem Schlüsselserver gespeichert wird. Die Leute können ihn so herunterladen und ihn benutzen, wenn sie dir verschlüsselte E-Mails verschicken. Man kann sich den Schlüsselserver wie ein Telefonbuch vorstellen, von wo Leute, die dir eine Verschlüsselte E-Mail schicken möchten, deinen öffentlichen Schlüssel herunterladen können.</p>
+<p>Dein privater Schlüssel ist eher wie ein Hausschlüssel, weil ihn niemand außer dir besitzen darf. Der private Schlüssel wird eingesetzt, wenn du E-Mails entschlüsselst.</p>
 
