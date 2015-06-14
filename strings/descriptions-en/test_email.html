@@ -1,22 +1,38 @@
-<h2>Sende eine verschlüsselte Test-E-Mail</h2>
-<p>Schreibe eine neue E-Mail in Deinem E-Mail-Programm an edward-de@fsf.org. Schreibe "Verschlüsselungstest" oder etwas ähnliches in den Betreff und irgendetwas in den Text der Nachricht.<br/>
-Das Icon mit dem Schlüssel unten rechts im Fenster der E-Mail sollte gelb sein. Das bedeutet die Verschlüsselung ist aktiviert. Dies wird ab jetzt deine Standardeinstellung sein.<br/>
-Neben dem Schlüssel siehst du das Bild eines Stiftes. Das Anklicken dieses Symbols veranlasst Enigmail, eine spezielle eindeutige Unterschrift auf der Basis deines privaten Schlüssels zu deiner Nachricht hinzuzufügen. Dies ist ein anderes Verfahren als die Verschlüsselung, das du im Rahmen dieser Anleitung nicht benutzten musst.<br/>
-Drücke auf Senden. Enigmail wird eine Meldung "Nicht gefundene Empfänger" zeigen.</p>
+<h2> Try it out!</h2>
+<p>Now you'll try a test correspondence with a computer program named Edward, which knows how to use encryption. Except where noted, these are the same steps you'd follow when corresponding with a real, live person.</p>
+				
+<h3> Send Edward your public key</h3>
+<p>This is a special step that you won't have to do when corresponding with real people. In your email program's menu, go to Enigmail &rarr; Key Management. You should see your key in the list that pops up. Right click on your key and select Send Public Keys by Email. This will create a new draft message, as if you had just hit the Write button.</p>
 
-<p>Um eine E-Mail an Edward zu verschlüsseln, benötigst du seinen öffentlichen Schlüssel, also muss Enigmail ihn jetzt von einem Schlüsselserver herunterladen. Klicke auf "Fehlende Schlüssel herunterladen", wähle den ersten (Schlüssel-ID C09A61E8) und klicke dann auf OK. Klicke im nächsten Pop-up-Fenster wieder auf OK.<br/>
-Jetzt bist du zurück beim Dialog "Nicht gefundene Empfänger". Wähle den Kasten vor Edwards Schlüssel an und klicke auf Absenden. Sollte die E-Mail nicht automatisch versendet werden, kannst du jetzt auf Senden drücken.</p>
+<p>Address the message to edward-en@fsf.org. Put at least one word (whatever you want) in the subject and body of the email. Don't send yet.</p>
 
-<p> Da du die E-Mail mit Edwards öffentlichem Schlüssel verschlüsselt hast, braucht man Edwards privaten Schlüssel, um die E-Mail entschlüsseln zu können. Nur Edward besitzt seinen privaten Schlüssel, also kann niemand außer ihm &mdash; nicht einmal du &mdash; die E-Mail entschlüsseln.</p>
+<p>There should be an icon of a yellow key in the bottom right of the composition window. This means that encryption is on, however, we want this first special message to Edward to be unencrypted. Click the key icon once to turn encryption off. The key should become grey, with a blue dot on it (to alert you that the setting has been changed from the default). Once encryption is off, hit Send.</p>
+
+<p >It may take two or three minutes for Edward to respond. In the meantime, you might want to skip ahead and check out the sectioon "Use it Well" section of this guide. Once he's responded, head to the next step. From here on, you'll be doing just the same thing as when corresponding with a real person.</p>
+
+<p>When you open Edward's reply, Enigmail may prompt you for your password before using your private key to decrypt it.</p>
+<h3>Send a test encrypted email</h3>
+<p>Write a new email in your email program, addressed to edward-en@fsf.org. Make the subject "Encryption test" or something similar and write something in the body.</p>
+<p>The key in the bottom right of the window should be yellow, meaning encryption is on. This will be your default from now on.</p>
+<p >Next to the key, you'll notice an icon of a pencil. Clicking this tells Enigmail to add a special, unique signature to your message, generated using your private key. This is a separate feature from encryption, and you don't have to use it for this guide.</p>
+<p>Click Send. Enigmail will pop up a window that says "Recipients not valid, not trusted or not found."</p>
+
+<p>To encrypt an email to Edward, you need his public key, so now you'll have Enigmail download it from a keyserver. Click Download Missing Keys and use the default in the pop-up that asks you to choose a keyserver. Once it finds keys, check the first one (Key ID starting with C), then select ok. Select ok in the next pop-up.</p>
+
+<p>Now you are back at the "Recipients not valid, not trusted or not found" screen. Check the box in front of Edward's key and click Send.</p>
+
+<p >Since you encrypted this email with Edward's public key, Edward's private key is required to decrypt it. Edward is the only one with his private key, so no one except him &mdash; not even you &mdash; can decrypt it.</p>
 					
-<em><h3>Probleme?</h3>
-								
-<p>Enigmail kann Edwards Schlüssel nicht finden.
-Schließe alle Pop-ups, die aufgetaucht sind, nachdem du auf Senden geklickt hast. Vergewissere dich, dass du mit dem Internet verbunden bist, und versuche es noch einmal. Wenn dies nicht funktioniert, wiederhole das Vorgehen und wähle dabei einen anderen Schlüsselserver aus.</p></em>	
-								
-<h3>Empfange eine Antwort</h3>
-<p>Wenn Edward deine E-Mail empfangen hat, entschlüsselt er sie mit seinem privaten Schlüssel. Dann wird er deinen öffentlichen Schlüssel verwenden (den du ihm in der Email geschickt hast), um seine Antwort an dich zu verschlüsseln.</p>
-<p>Edward braucht vermutlich zwei, drei Minuten, um zu antworten. In der Zwischenzeit du könntest schonmal bei "Nutze es richtig" weiter lesen.</p>
-<p>Wenn du Edwards E-Mail bekommst und sie öffnest, erkennt Enigmail automatisch, dass sie mit deinem öffentlichen Schlüssel verschlüsselt wurde, und wird dann deinen privaten Schlüssel benutzen, um sie zu entschlüsseln.</p>
-<p>Beachte die Leiste mit Informationen über Edwards Schlüssel, die über der Nachricht eingeblendet wird.</p>
+<p><em>Enigmail can't find Edward's key<br/>
+										Close the pop-ups that have appeared since you clicked Send. Make sure you are connected to the Internet and try again. If that doesn't work, repeat the process, choosing a different keyserver when it asks you to pick one.</em></p>
+		
+<h3><em>Important:</em> Security tips</h3>
+<p>Even if you encrypted your email, the subject line is not encrypted, so don't put private information there. The sending and receiving addresses aren't encrypted either, so they could be read by a surveillance system. When you send attachments, Enigmail will give you an option of whether you want to encrypt them.</p>
+
 					
+<h3>Receive a response</h3>
+<p>When Edward receives your email, he will use his private key to decrypt it, then use your public key (which you sent him in your email to encrypt his reply to you.</p>
+<p>It may take two or three minutes for Edward to respond. In the meantime, you might want to skip ahead and check out the "Use it Well" section of this guide.</p>
+<p>When you receive Edward's email and open it, Enigmail will automatically detect that it is encrypted with your public key, and then it will use your private key to decrypt it.</p>
+<p>Notice the bar that Enigmail shows you above the message, with information about the status of Edward's key.</p>
+

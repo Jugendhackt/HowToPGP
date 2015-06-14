@@ -1,23 +1,23 @@
-<h2>Verstehe das Web of Trust</h2>
-<p>E-Mail-Verschlüsselung ist zwar eine leistungsfähige Technologie, sie hat aber eine Schwäche: Sie benötigt eine Methode zur Überprüfung, ob ein öffentlicher Schlüssel tatsächlich der angegebenen Person gehört. Ansonsten gäbe es keine Möglichkeit, eine Angreiferin davon abzuhalten, Schlüssel mit dem Namen deines Freundes zu erstellen und sich als dein Freund auszugeben. Aus diesem Grund haben die Programmierer freier Software, die E-Mail-Verschlüsselung erfunden haben, Signaturen und das Web of Trust erfunden.</p>
+<h2> Learn the Web of Trust</h2>
+<p>Email encryption is a powerful technology, but it has a weakness; it requires a way to verify that a person's public key is actually theirs. Otherwise, there would be no way to stop an attacker from making an email address with your friend's name, creating keys to go with it and impersonating your friend. That's why the free software programmers that developed email encryption created keysigning and the Web of Trust.</p>
 
-<p>Wenn du den Schlüssel von jemandem signierst, dann sagst du öffentlich, dass du glaubst, dass der Schlüssel tatsächlich dieser Person gehört und nicht einem Betrüger. Leute, die deinen öffentlichen Schlüssel benutzen, können sehen, wie viele Signaturen er erhalten hat. Wenn du GnuPG einige Jahre lang verwendet hast, kannst du hunderte Signaturen haben. Das Web of Trust ist eine Konstellation aller GnuPG-Nutzer, die durch Signaturenketten zu einem riesigen Netz verbunden sind. Je mehr Signaturen ein Schlüssel hat und je mehr Signaturen die Schlüssel derjenigen, die unterschrieben haben, erhalten haben, desto vertrauenswürdiger ist dieser Schlüssel.</p>
+<p>When you sign someone's key, you are publicly saying that you trust that it does belong to them and not an impostor. People who use your public key can see the number of signatures it has. Once you've used GnuPG for a long time, you may have hundreds of signatures. The Web of Trust is the constellation of all GnuPG users, connected to each other by chains of trust expressed through signatures, forming a giant network. The more signatures a key has, and the more signatures its signers' keys have, the more trustworthy that key is.</p>
 
-<p>Öffentliche Schlüssel werden normalerweise anhand ihres Fingerabdrucks identifiziert, einer Zeichenkette wie F357AA1A5B1FA42CFD9FE52A9FF2194CC09A61E8 (für Edwards Schlüssel). Sehen kannst du den Fingerabdruck deines öffentlichen Schlüssels – und anderer öffentlicher Schlüssel, die du gespeichert hast, indem du zu Enigmail &rarr; Schlüssel verwalten im Menü deines E-Mail-Programms gehst und dann mit der rechten Maustaste auf den Schlüssel klickst und die Schlüsseleigenschaften auswählst. Es ist sinnvoll, deinen Fingerabdruck immer weiterzugeben, wenn du anderen deine E-Mail-Adresse mitteilst, so dass diese Menschen kontrollieren können, ob sie deinen richtigen Schlüssel von einem Schlüsselserver herunterladen.</p>
+<p>People's public keys are usually identified by their key fingerprint, which is a string of digits like F357AA1A5B1FA42CFD9FE52A9FF2194CC09A61E8 (for Edward's key). You can see the fingerprint for your public key, and other public keys saved on your computer, by going to Enigmail &rarr; Key Management in your email program's menu, then right clicking on the key and choosing Key Properties. It's good practice to share your fingerprint wherever you share your email address, so that people can double-check that they have the correct public key when they download yours from a keyserver.</p>
 
-<p>Du wirst sehen, dass man sich auch über die Schlüssel-ID auf öffentliche Schlüssel bezieht, dabei handelt es sich einfach um die letzten 8 Zeichen des Fingerabdrucks, z.B. C09A61E8 für Edward. Die Schlüssel-ID ist direkt im Fenster Schlüssel verwalten sichtbar. Diese Schlüssel-ID ist wie der Vorname einer Person (es ist eine nützliche Abkürzung, aber ist vielleicht nicht eindeutig), während der Fingerabdruck tatsächlich den Schlüssel eindeutig und ohne Möglichkeit der Verwechslung identifiziert. Wenn du nur die Schlüssel-ID hast, kannst du den Schlüssel (und seinen Fingerabdruck) immer noch nachschlagen, wie du es in Schritt 3 getan hast, aber wenn mehrere Möglichkeiten auftauchen, brauchst du den Fingerabdruck der Person, mit der du kommunizieren willst, um zu klären, welchen Schlüssel du benutzen sollst.</p>
+<p>You may also see public keys referred to by their key ID, which is simply the last 8 digits of the fingerprint, like C09A61E8 for Edward. The key ID is visible directly from the Key Management window. This key ID is like a person's first name (it is a useful shorthand but may not be unique to a given key), whereas the fingerprint actually identifies the key uniquely without the possibility of confusion. If you only have the key ID, you can still look up the key (as well as its fingerprint), like you did in Step 3, but if multiple options appear, you'll need the fingerprint of the person to whom are trying to communicate to verify which one to use.</p>
 
 
+<h3>Sign a key</h3>
+<p>In your email program's menu, go to Enigmail &rarr; Key Management.</p>
+<p>Right click on Edward's public key and select Sign Key from the context menu.</p>
+<p>In the window that pops up, select "I will not answer" and click ok.</p>
+<p>Now you should be back at the Key Management menu. Select Keyserver &rarr; Upload Public Keys and hit ok.</p>
+<p>You've just effectively said "I trust that Edward's public key actually belongs to Edward." This doesn't mean much because Edward isn't a real person, but it's good practice.</p>
 
-<h3>Signiere einen Schlüssel</h3>
-<p>Gehe in deinem E-Mail-Programm zu Enigmail &rarr; Schlüssel verwalten.</p>
-<p>Klicke mit der rechten Maustaste auf Edwards öffentlichen Schlüssel und wähle "Unterschreiben" aus dem Kontextmenü aus.</p>
-<p>Im Pop-up-Fenster wähle "Keine Antwort" und klicke auf OK.</p>
-<p>Zurück in Enigmail-Schlüssel verwalten wähle Schlüssel-Server &rarr; Schlüssel hochladen und klicke auf OK.</p>
-<p>Du hast gerade gesagt, dass du darauf vertraust, dass Edwards Schlüssel tatsächlich Edward gehört. Dies bedeutet wenig, da Edward keine echte Person ist, es ist aber gute Praxis.</p>
 
-			
-<h3><em>Wichtig:</em> Überprüfe die Identität der Leute, deren Schlüssel du signierst.</h3>
-<p>Bevor du einen Schlüssel einer realen Person signierst, überprüfe stets, ob der Schlüssel ihr gehört und ob sie ist, wer sie behauptet zu sein. Frage sie nach ihrem Ausweis (außer du vertraust ihr sehr stark) und dem Fingerabdruck ihres öffentlichen Schlüssels -- nicht nur nach der kurzen Schlüssel-ID, die zusätzlich auch zu einem anderen Schlüssel gehören könnte. Antworte ehrlich auf die Frage "Haben Sie überprüft, ob dieser Schlüssel tatsächlich dem oben genannten Absender gehört?" in Enigmail..</p>
-					
+						
+<h3><em>Important:</em> check people's identification before signing their keys</h3>
+<p>Before signing a real person's key, always make sure it actually belongs to them, and that they are who they say they are. Ask them to show you their ID (unless you trust them very highly) and their public key fingerprint -- not just the shorter public key ID, which could refer to another key as well. In Enigmail, answer honestly in the window that pops up and asks "How carefully have you verified that the key you are about to sign actually belongs to the person(s) named above?".</p>
+		
 

@@ -22,9 +22,9 @@ $translations["QUESTION_TWO"]       = "Which mail client do you use?";
 $translations["THUNDERBIRD"]        = "Thunderbird";
     
 $translations["QUESTION_THREE"]     = "Which level of difficulty?";
-$translations["SLIDER_VALUE_1"]     = "I am new to computing";
-$translations["SLIDER_VALUE_2"]     = "Fast to the goal";
-$translations["SLIDER_VALUE_3"]     = "Technical understanding";
+$translations["SLIDER_VALUE_1"]     = "I\\'m not good with computers";
+$translations["SLIDER_VALUE_2"]     = "As fast as possible, please!";
+$translations["SLIDER_VALUE_3"]     = "I want to gain technical understanding";
 
 $translations["START_DESCRIPTION"]  = "Start tutorial!";
 $translations["ERROR404"]           = "Error 404 - This Site does not exist";

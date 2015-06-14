@@ -33,6 +33,7 @@ else{
 }
 
 add("Enigmail_create_keys.html");
+add("keyserver.html");
 add("test_email.html");
 add("Nutze_es_richtig.html");
 if($level=="3"){
