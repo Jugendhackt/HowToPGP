@@ -13,5 +13,5 @@ PGP ist besonders sicher, jedoch leider nur schwer zu bedienen bzw. einzurichten
 **Nur durch Aufklärung im Bereich der Verschlüsselung kann langfristig  
 der allgemeinen Überwachung entgegengewirkt werden!**
 
-![Screenshot](https://raw.githubusercontent.com/ByteHamster/HowToPGP/master/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/Jugendhackt/HowToPGP/master/screenshot.png)
 
