@@ -25,7 +25,11 @@ $translations["LANG"] = $lang;
 
     function add($file) {
         global $content, $lang;
-        $content .= file_get_contents("./strings/descriptions-$lang/$file");
+        if(file_exists("./strings/descriptions-$lang/$file")) {
+            $content .= file_get_contents("./strings/descriptions-$lang/$file");
+        } else {
+            $content .= "<br /><br /><h3>Not translated</h3><p>This text snippet is not yet translated.</p><br /><br />";
+        }
     }
     
     // Fills $content with snippets:
