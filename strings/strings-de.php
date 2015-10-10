@@ -29,4 +29,3 @@ $translations["SLIDER_VALUE_3"]     = "Technisches Verständnis";
 $translations["CONTACT_US"]         = "Wenn ihr uns erreichen wollt, schreibt uns doch eine Mail. Unsere PGP-Keys findet ihr hier.";
 $translations["START_DESCRIPTION"]  = "Anleitung starten!";
 $translations["ERROR404"]           = "Error 404 - Diese Seite existiert nicht!";
-
