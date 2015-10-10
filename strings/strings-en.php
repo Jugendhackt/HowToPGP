@@ -12,7 +12,7 @@ $translations["SECTION_2"]          = "On this page we will explain how you can 
 $translations["CONTINUE"]           = "Continue";
 $translations["SOURCES"]            = "Sources";
 # Question
-$translations["QUESTIONS_DESCRIPTION"] = "Bevore starting, we will request you to give us some simple information about your system. Also, we would be pleased if you would show us how much time you have - so we can explain it in more or less detail.";
+$translations["QUESTIONS_DESCRIPTION"] = "Before starting, we will request you to give us some simple information about your system. Also we would be pleased if you would show us how much time you have - so we can explain it in more or less detail.";
 $translations["QUESTION_ONE"]       = "Which operationg system do you use?";
 $translations["LINUX"]              = "Linux";
 $translations["WINDOWS"]            = "Windows";

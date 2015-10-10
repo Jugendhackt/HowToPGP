@@ -27,14 +27,14 @@ if($client != "browser"){
 	if($level == "3") {
 		add("GnuPG.html");
 	}
-
 	add("Thunderbird_Enigmail.html");
-
-	if($level == "1" || $level == "2") {
-		add("public_private_key_simple.html");
-	} else {
-		add("public_private_key_technical.html");
-	}
+}
+if($level == "1" || $level == "2") {
+	add("public_private_key_simple.html");
+} else {
+	add("public_private_key_technical.html");
+}
+if($client != "browser"){   
 	add("Enigmail_create_keys.html");
 }
 add("keyserver.html");

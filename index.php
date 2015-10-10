@@ -5,6 +5,8 @@ if(isset($_GET["lang"])) {
     $_COOKIE["lang"] = $_GET["lang"];
 }
 
+file_put_contents("counter.txt", @file_get_contents("counter.txt") + 1);
+
 $default_lang = strpos(strtolower($_SERVER["HTTP_ACCEPT_LANGUAGE"]), "de") !== false ? "de" : "en";
 $lang = in_array(@$_COOKIE["lang"],["de","en"]) ? @$_COOKIE["lang"] : $default_lang;
 
