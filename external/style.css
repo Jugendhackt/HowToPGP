@@ -109,16 +109,35 @@ a.button:hover {
     padding-top: 150px;
 }
 
-.question img {
+.question > div > img {
     width:  100px;
     height: 100px;
-    margin: 10px;
+    margin: 0px auto;
     cursor: pointer;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 10px;
     transition: all 0.3s ease-in-out;
 }
 
-.question img:hover {
- transform: scale(1.2);
+.question > div:hover > img {
+    width:  130px;
+    height: 130px;
+    margin-top: 10px;
+}
+
+.question > div {
+    transition: all 0.3s ease-in-out;
+    font-size: 0px;
+    color: #444;
+    width: 150px;
+    height: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.question > div:hover {
+    font-size: 16px;
 }
 
 #input_range {
