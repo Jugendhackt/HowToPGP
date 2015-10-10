@@ -23,7 +23,7 @@ $translations["THUNDERBIRD"]        = "Thunderbird";
 $translations["INTERNETBROWSER"]    = "Kein Mailprogramm";
     
 $translations["QUESTION_THREE"]     = "Welches Schwierigkeitsstufe?";
-$translations["SLIDER_VALUE_1"]     = "Ich stehe mit Computern auf Kriegsfuß";
+$translations["SLIDER_VALUE_1"]     = "Ich stehe mit Computern auf Kriegsfuß.";
 $translations["SLIDER_VALUE_2"]     = "Schnell zum Ziel";
 $translations["SLIDER_VALUE_3"]     = "Technisches Verständnis";
 $translations["CONTACT_US"]         = "Wenn ihr uns erreichen wollt, schreibt uns doch eine Mail. Unsere PGP-Keys findet ihr hier.";
