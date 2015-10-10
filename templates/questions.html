@@ -15,6 +15,12 @@
         <div><img onclick="javascript:selectClient('thunderbird');" alt="$(THUNDERBIRD)" src="./media/images/thunderbird.png" />$(THUNDERBIRD)</div>
         <div><img onclick="javascript:selectClient('browser');" alt="$(INTERNETBROWSER)" src="./media/images/internetbrowser.png" />$(INTERNETBROWSER)</div>
     </div>
+    <div id="question_browser" class="question" style="display:none;">
+        <h2>$(QUESTION_BROWSER)</h2>
+        <div><img onclick="javascript:selectBrowser('ie');" alt="$(IE)" src="./media/images/ie.png" />$(IE)</div>
+        <div><img onclick="javascript:selectBrowser('firefox');" alt="$(FIREFOX)" src="./media/images/firefox.png" />$(FIREFOX)</div>
+        <div><img onclick="javascript:selectBrowser('chrome');" alt="$(CHROME)" src="./media/images/chrome.png" />$(CHROME)</div>
+    </div>
     <div id="question_level" class="question" style="display:none;">
         <h2>$(QUESTION_THREE)</h2>
 
@@ -35,6 +41,7 @@
         <input type="hidden" name="os" id="field_os">
         <input type="hidden" name="client" id="field_client">
         <input type="hidden" name="level" id="field_level">
+        <input type="hidden" name="browser" id="field_browser">
     </form>
 
 </div>

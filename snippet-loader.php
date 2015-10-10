@@ -1,8 +1,6 @@
 <?php
 /*
- * $lang ==> "de" or "en"
- * $content ==> should be filled here
- * $os, $client, $level ==> settings
+ * $os, $client, $level, $browser
  * 
  */
 if($client =="thunderbird")

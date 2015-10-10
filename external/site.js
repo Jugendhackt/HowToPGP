@@ -5,8 +5,17 @@ function selectOS(os) {
 }
 function selectClient(client) {
     $("#question_client").hide(500);
+        $("#field_client").val(client);
+    if(client == "browser") {
+        $("#question_browser").show(500);
+    } else {
+        $("#question_level").show(500);
+    }
+}
+function selectBrowser(browser) {
+    $("#question_browser").hide(500);
     $("#question_level").show(500);
-    $("#field_client").val(client);
+    $("#field_browser").val(browser);
 }
 function submitQuestions() {
     $("#question_level").hide(500);

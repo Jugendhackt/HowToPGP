@@ -19,9 +19,10 @@ $translations["LANG"] = $lang;
 } else if(@$_GET["page"] == "description") {
     $content = "";
     
-    $os     = @$_GET["os"];
-    $client = @$_GET["client"];
-    $level  = @$_GET["level"];
+    $os      = @$_GET["os"];
+    $client  = @$_GET["client"];
+    $level   = @$_GET["level"];
+    $browser = @$_GET["browser"];
 
     function add($file) {
         global $content, $lang;

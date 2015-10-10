@@ -10,7 +10,7 @@ $translations["QUESTIONS_TITLE"]    = "Questions";
 $translations["SECTION_1"]          = "Have you ever heard something about the PGP-encryption?";
 $translations["SECTION_2"]          = "On this page we will explain how you can use PGP on your Computer. But first: some questions make it possible to deliver specific informaion.";
 $translations["CONTINUE"]           = "Continue";
-$translations["SOURCES"]             ="Sources";
+$translations["SOURCES"]            = "Sources";
 # Question
 $translations["QUESTIONS_DESCRIPTION"] = "Bevore starting, we will request you to give us some simple information about your system. Also, we would be pleased if you would show us how much time you have - so we can explain it in more or less detail.";
 $translations["QUESTION_ONE"]       = "Which operationg system do you use?";
@@ -30,3 +30,8 @@ $translations["SLIDER_VALUE_3"]     = "I want to gain technical understanding";
 $translations["START_DESCRIPTION"]  = "Start tutorial!";
 $translations["ERROR404"]           = "Error 404 - This Site does not exist";
 $translations["CONTACT_US"]         = "In case that you want to contact us, drop us a mail. Our Keys are down there.";
+
+$translations["QUESTION_BROWSER"]   = "Which browser?";
+$translations["IE"]                 = "Internet Explorer";
+$translations["FIREFOX"]            = "Firefox";
+$translations["CHROME"]             = "Chrome";
