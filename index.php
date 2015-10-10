@@ -5,7 +5,8 @@ if(isset($_GET["lang"])) {
     $_COOKIE["lang"] = $_GET["lang"];
 }
 
-$lang = in_array(@$_COOKIE["lang"],["de","en"]) ? @$_COOKIE["lang"] : "en";
+$default_lang = strpos(strtolower($_SERVER["HTTP_ACCEPT_LANGUAGE"]), "de") !== false ? "de" : "en";
+$lang = in_array(@$_COOKIE["lang"],["de","en"]) ? @$_COOKIE["lang"] : $default_lang;
 
 include("./strings/strings-$lang.php");
 $translations["LANG"] = $lang;
