@@ -15,6 +15,7 @@ if($client =="thunderbird")
 else if($client == "browser")
 {
 	add("Mailvelope_introduction.html");
+	add("Mailvelope_install.html");
 }
 if($os =="windows"){
     add("W_GPG4Win.html");
