@@ -23,3 +23,10 @@ function switchTo(href) {
         window.location.href=href;
     }, 600);
 }
+$(window).scroll(function(){
+  var sticky = $('h1'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 75) sticky.addClass('scroll');
+  else sticky.removeClass('scroll');
+});

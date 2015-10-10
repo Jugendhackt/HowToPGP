@@ -4,7 +4,7 @@
 $translations = array();
 
 # General page Strings
-$translations["PAGE_TITLE"]         = "PGP HowTo";
+$translations["PAGE_TITLE"]         = "HowToPGP";
 $translations["COPYRIGHT"]          = "© Jugend Hackt Süd";
 $translations["QUESTIONS_TITLE"]    = "Questions";
 $translations["SECTION_1"]          = "Have you ever heard something about the PGP-encryption?";

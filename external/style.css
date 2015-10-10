@@ -38,6 +38,11 @@ h1 {
     font-size: 45px;
     background-color: #E9E5E5;
     background-color: rgba(230,230,230,0.8);
+    transition: 0.5s all ease;
+}
+h1.scroll {
+    padding: 10px 0px;
+    font-size: 30px;
 }
 @media screen and (max-width: 780px) {
     #main_img {
