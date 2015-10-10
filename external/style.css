@@ -177,11 +177,8 @@ h3 {
     right: 0px;
     padding: 10px;
 }
-#language img{
+#language img {
     height: 20px;
-}
-#language img:hover{
-
 }
 #description img {
     cursor: pointer;
@@ -194,11 +191,9 @@ input[type=range] {
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
-
 input[type=range]:focus {
   outline: none;
 }
-
 input[type=range]::-ms-track {
   width: 100%;
   cursor: pointer;
@@ -206,7 +201,6 @@ input[type=range]::-ms-track {
   border-color: transparent;
   color: transparent;
 }
-
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: 1px solid #000000;
