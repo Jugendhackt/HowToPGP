@@ -56,6 +56,9 @@ foreach($translations as $name => $value) {
     $main_page = str_replace('$(' . $name . ')', $value, $main_page);
 }
 
+$main_page = preg_replace('/\s+/', " ", $main_page);
+$main_page = str_replace("> <", "><", $main_page);
+
 echo $main_page;
 
 ?>
