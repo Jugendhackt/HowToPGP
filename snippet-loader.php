@@ -5,14 +5,19 @@
  * $os, $client, $level ==> settings
  * 
  */
-
-if($os == "windows"||$os =="osx") {
-    add("W_Thunderbird_install.html");
+if($client =="thunderbird")
+{
+	if($os == "windows"||$os =="osx") {
+		add("W_Thunderbird_install.html");
+	}
+	else if ($os == "linux") {
+		add("L_Thunderbird_install.html");
+	}
 }
-else if ($os == "linux") {
-    add("L_Thunderbird_install.html");
+else if($client == "browser")
+{
+	add("Mailvelope_introduction.html");
 }
-
 if($os =="windows"){
     add("W_GPG4Win.html");
 }
