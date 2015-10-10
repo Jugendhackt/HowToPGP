@@ -20,6 +20,7 @@ $translations["MACOS"]              = "OSX";
 
 $translations["QUESTION_TWO"]       = "Welches E-Mail-Programm verwenden Sie?";
 $translations["THUNDERBIRD"]        = "Thunderbird";
+$translations["INTERNETBROWSER"]    = "Kein Mailprogramm";
     
 $translations["QUESTION_THREE"]     = "Welches Schwierigkeitsstufe?";
 $translations["SLIDER_VALUE_1"]     = "Ich stehe mit Computern auf Kriegsfuß";

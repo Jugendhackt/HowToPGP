@@ -20,6 +20,7 @@ $translations["MACOS"]              = "OSX";
 
 $translations["QUESTION_TWO"]       = "Which mail client do you use?";
 $translations["THUNDERBIRD"]        = "Thunderbird";
+$translations["INTERNETBROWSER"]    = "No Mailclient";
     
 $translations["QUESTION_THREE"]     = "Which level of difficulty?";
 $translations["SLIDER_VALUE_1"]     = "I\\'m not good with computers";
