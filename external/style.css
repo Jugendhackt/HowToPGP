@@ -38,11 +38,16 @@ h1 {
     font-size: 45px;
     background-color: #E9E5E5;
     background-color: rgba(230,230,230,0.8);
-    transition: 0.5s all ease;
+    transition: 0.3s all ease;
 }
 h1.scroll {
     padding: 10px 0px;
     font-size: 30px;
+}
+@media screen and (max-width: 440px) {
+    h1 {
+        padding-top: 30px;
+    }
 }
 @media screen and (max-width: 780px) {
     #main_img {
@@ -50,10 +55,11 @@ h1.scroll {
     }
 }
 #content.mainpage > div {
-    width: 400px; margin: 0 auto;
+    width: 400px; 
+    margin: 0 auto;
 }
 @media screen and (max-width: 440px) {
-    #content > div {
+    #content > div, #content.mainpage > div {
         width: 100%;
     }
 }
@@ -179,6 +185,7 @@ h3 {
 }
 #language img {
     height: 20px;
+    margin-left: 5px;
 }
 #description img {
     cursor: pointer;
