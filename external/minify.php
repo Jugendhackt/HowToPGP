@@ -16,7 +16,9 @@ $content = str_replace("{ ", "{", $content);
 $content = str_replace("} ", "}", $content);
 $content = str_replace(" {", "{", $content);
 $content = str_replace(" }", "}", $content);
+$content = str_replace(" >", ">", $content);
+$content = str_replace("> ", ">", $content);
 
 
 echo $content;
-echo "/* ".(strlen($content_old)/1024)."KB => ".(strlen($content)/1024)."KB */";
+echo "/* Saved ".round(100-strlen($content)/strlen($content_old)*100)."% */";
