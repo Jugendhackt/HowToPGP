@@ -8,14 +8,14 @@ $translations["PAGE_TITLE"]         = "HowToPGP";
 $translations["COPYRIGHT"]          = "© Jugend Hackt Süd";
 $translations["DESCRIPTION"]        = "PGP made easy! Read your personal instruction for PGP.";
 $translations["QUESTIONS_TITLE"]    = "Questions";
-$translations["SECTION_1"]          = "Have you ever heard something about the PGP-encryption?";
-$translations["SECTION_2"]          = "On this page we will explain how you can use PGP on your Computer. But first: some questions make it possible to deliver specific informaion.";
+$translations["SECTION_1"]          = "Have you ever heard anything about the PGP-encryption?";
+$translations["SECTION_2"]          = "On this page we will explain you how to use PGP on your Computer. Please answer some questions in order to make it possible to deliver specific informaion first!";
 $translations["CONTINUE"]           = "Continue";
 $translations["SOURCES"]            = "Sources";
 $translations["BUGREPORT"]          = "Send feedback";
 
 # Question
-$translations["QUESTIONS_DESCRIPTION"] = "Before starting, we will request you to give us some simple information about your system. Also we would be pleased if you would show us how much time you have - so we can explain it in more or less detail.";
+$translations["QUESTIONS_DESCRIPTION"] = "Before starting, we ask you to give us some simple information about your system. Also we would be pleased if you would tell us how much spare time you have &mdash; so we can explain it in more or less detail.";
 $translations["QUESTION_ONE"]       = "Which operationg system do you use?";
 $translations["LINUX"]              = "Linux";
 $translations["WINDOWS"]            = "Windows";
