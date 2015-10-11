@@ -3,7 +3,7 @@
 
 <p>When you sign someone's key, you are publicly saying that you trust that it does belong to them and not an impostor. People who use your public key can see the number of signatures it has. Once you've used GnuPG for a long time, you may have hundreds of signatures. The Web of Trust is the constellation of all GnuPG users, connected to each other by chains of trust expressed through signatures, forming a giant network. The more signatures a key has, and the more signatures its signers' keys have, the more trustworthy that key is.</p>
 
-<p>People's public keys are usually identified by their key fingerprint, which is a string of digits like F357AA1A5B1FA42CFD9FE52A9FF2194CC09A61E8 (for Edward's key). You can see the fingerprint for your public key, and other public keys saved on your computer, by going to Enigmail &rarr; Key Management in your email program's menu, then right clicking on the key and choosing Key Properties. It's good practice to share your fingerprint wherever you share your email address, so that people can double-check that they have the correct public key when they download yours from a keyserver.</p>
+<p>People's public keys are usually identified by their key fingerprint, which is a string of digits like F357AA1A5B1FA42CFD9FE52A9FF2194CC09A61E8 (for Edward's key). You can see the fingerprint for your public key, and other public keys saved on your computer, by going to Enigmail &rarr; Key Management in your email program's menu, then right clicking on the key and choosing Key Properties. it is good practice to share your fingerprint wherever you share your email address, so that people can double-check that they have the correct public key when they download yours from a keyserver.</p>
 
 <p>You may also see public keys referred to by their key ID, which is simply the last 8 digits of the fingerprint, like C09A61E8 for Edward. The key ID is visible directly from the Key Management window. This key ID is like a person's first name (it is a useful shorthand but may not be unique to a given key), whereas the fingerprint actually identifies the key uniquely without the possibility of confusion. If you only have the key ID, you can still look up the key (as well as its fingerprint), like you did in Step 3, but if multiple options appear, you'll need the fingerprint of the person to whom are trying to communicate to verify which one to use.</p>
 
@@ -13,7 +13,7 @@
 <p>Right click on Edward's public key and select Sign Key from the context menu.</p>
 <p>In the window that pops up, select "I will not answer" and click ok.</p>
 <p>Now you should be back at the Key Management menu. Select Keyserver &rarr; Upload Public Keys and hit ok.</p>
-<p>You've just effectively said "I trust that Edward's public key actually belongs to Edward." This doesn't mean much because Edward isn't a real person, but it's good practice.</p>
+<p>You've just effectively said "I trust that Edward's public key actually belongs to Edward." This does not mean much because Edward isn't a real person, but it is good practice.</p>
 
 
 						
