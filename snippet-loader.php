@@ -10,6 +10,7 @@ if($client == "thunderbird") {
         add("L_Thunderbird_install.html");
     }
 } else if($client == "browser") {
+    add ("not_translated.html");
     add("Mailvelope_introduction.html");
 	if($browser == "firefox"){
 		add("Mailvelope_install_firefox.html");
