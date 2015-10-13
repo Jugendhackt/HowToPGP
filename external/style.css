@@ -365,3 +365,10 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
     background: #367ebd;
 }
+#description li {
+    text-align: left;
+    font-size: 20px;
+}
+#description ul {
+    margin-left: 30px;
+}

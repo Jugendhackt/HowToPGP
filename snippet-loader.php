@@ -3,44 +3,48 @@
  * $os, $client, $level, $browser
  * 
  */
+
 if($client == "thunderbird") {
     if($os == "windows" || $os == "osx") {
-        add("W_Thunderbird_install.html");
+        add("thunderbird_install_w.html");
     } else if ($os == "linux") {
-        add("L_Thunderbird_install.html");
+        add("thunderbird_install_l.html");
     }
 } else if($client == "browser") {
-    add ("not_translated.html");
-    add("Mailvelope_introduction.html");
-	if($browser == "firefox"){
-		add("Mailvelope_install_firefox.html");
-	}else if($browser == "chrome"){
-    	add("Mailvelope_install _chrome.html");
-	}
+    add("not_translated.html");
+    add("mailvelope_introduction.html");
+    if($browser == "firefox"){
+        add("mailvelope_install_firefox.html");
+    } else if($browser == "chrome"){
+        add("mailvelope_install_chrome.html");
+    }
 }
-if($client != "browser"){        
-	if($os == "windows") {
-		add("W_GPG4Win.html");
-	} else if($os == "osx") {
-		add("M_GPGTools.html");
-	}
 
-	if($level == "3") {
-		add("GnuPG.html");
-	}
-	add("Thunderbird_Enigmail.html");
+if($client != "browser"){        
+    if($os == "windows") {
+        add("gpg4win.html");
+    } else if($os == "osx") {
+        add("gpgtools_m.html");
+    }
+
+    if($level == "3") {
+        add("gnupg.html");
+    }
+    add("enigmail_thunderbird.html");
 }
+
 if($level == "1" || $level == "2") {
-	add("public_private_key_simple.html");
+    add("public_private_key_simple.html");
 } else {
-	add("public_private_key_technical.html");
+    add("public_private_key_technical.html");
 }
 if($client != "browser"){   
-	add("Enigmail_create_keys.html");
+    add("enigmail_create_keys.html");
 }
+
 add("keyserver.html");
 add("test_email.html");
-add("Nutze_es_richtig.html");
+add("using_it_right.html");
 
 if($level == "3") {
     add("web_of_thrust.html");
