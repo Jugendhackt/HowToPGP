@@ -25,7 +25,7 @@ $translations["QUESTION_TWO"]       = "Welches E-Mail-Programm verwenden Sie?";
 $translations["THUNDERBIRD"]        = "Thunderbird";
 $translations["INTERNETBROWSER"]    = "Kein Mailprogramm";
     
-$translations["QUESTION_THREE"]     = "Welches Schwierigkeitsstufe?";
+$translations["QUESTION_THREE"]     = "Wie Ausführlich?";
 $translations["SLIDER_VALUE_1"]     = "Ich stehe mit Computern auf Kriegsfuß.";
 $translations["SLIDER_VALUE_2"]     = "Schnell zum Ziel";
 $translations["SLIDER_VALUE_3"]     = "Technisches Verständnis";
