@@ -15,7 +15,7 @@ $translations["SOURCES"]            = "Quellen";
 $translations["BUGREPORT"]          = "Feedback senden";
 
 # Question
-$translations["QUESTIONS_DESCRIPTION"] = "";
+$translations["QUESTIONS_DESCRIPTION"] = "Um für Sie eine personalisierte Anleitung erstellen zu können, brauchen wir ein paar Informationen zu Ihrem System und der Zeit die Sie zur Verfügung haben.";
 $translations["QUESTION_ONE"]       = "Welches Betriebssystem verwenden Sie?";
 $translations["LINUX"]              = "Linux";
 $translations["WINDOWS"]            = "Windows";
