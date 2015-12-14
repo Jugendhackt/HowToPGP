@@ -15,7 +15,7 @@ $translations["SOURCES"]            = "Quellen";
 $translations["BUGREPORT"]          = "Feedback senden";
 
 # Question
-$translations["QUESTIONS_DESCRIPTION"] = "Um für Sie eine personalisierte Anleitung erstellen zu können, brauchen wir ein paar Informationen zu Ihrem System und der Zeit die Sie zur Verfügung haben.";
+$translations["QUESTIONS_DESCRIPTION"] = "Haben Sie schon mal von PGP-Verschlüsselung gehört? Mit dieser interaktiven Anleitung wollen wir Ihnen erklären, wie Sie mit Hilfe von PGP Ihre E-Mails verschlüsseln können. Dadurch schützen Sie Ihre Kommunikation und wirken der Massenüberwachung entgegen. Doch zuvor: eine kleine Fragerunde, um rechnerspezifische Ergebnisse liefern zu können.";
 $translations["QUESTION_ONE"]       = "Welches Betriebssystem verwenden Sie?";
 $translations["LINUX"]              = "Linux";
 $translations["WINDOWS"]            = "Windows";
