@@ -8,14 +8,14 @@ $translations["PAGE_TITLE"]         = "HowToPGP";
 $translations["COPYRIGHT"]          = "© Jugend Hackt Süd";
 $translations["DESCRIPTION"]        = "PGP einfach gemacht! Lesen Sie eine persönlich angepasste Anleitung für PGP.";
 $translations["QUESTIONS_TITLE"]    = "Fragen";
-$translations["SECTION_1"]          = "Haben Sie schonmals von PGP-Verschlüsselung gehört?";
-$translations["SECTION_2"]          = "Auf dieser Seite wollen wir Ihnen erklären, wie Sie bei Ihrem Computer die PGP-Verschlüsselung nutzen. Doch zuvor: eine kleine Fragerunde, um rechnerspezifische Ergebnisse liefern zu können.";
+$translations["SECTION_1"]          = "Haben Sie schon mal von PGP-Verschlüsselung gehört?";
+$translations["SECTION_2"]          = "Mit dieser interaktiven Anleitung wollen wir Ihnen erklären, wie Sie mit Hilfe von PGP Ihre E-Mails verschlüsseln können. Dadurch schützen Sie Ihre Kommunikation und wirken der Massenüberwachung entgegen. Doch zuvor: eine kleine Fragerunde, um rechnerspezifische Ergebnisse liefern zu können.";
 $translations["CONTINUE"]           = "Fortfahren";
 $translations["SOURCES"]            = "Quellen";
 $translations["BUGREPORT"]          = "Feedback senden";
 
 # Question
-$translations["QUESTIONS_DESCRIPTION"] = "Haben Sie schon mal von PGP-Verschlüsselung gehört? Mit dieser interaktiven Anleitung wollen wir Ihnen erklären, wie Sie mit Hilfe von PGP Ihre E-Mails verschlüsseln können. Dadurch schützen Sie Ihre Kommunikation und wirken der Massenüberwachung entgegen. Doch zuvor: eine kleine Fragerunde, um rechnerspezifische Ergebnisse liefern zu können.";
+$translations["QUESTIONS_DESCRIPTION"] = "";
 $translations["QUESTION_ONE"]       = "Welches Betriebssystem verwenden Sie?";
 $translations["LINUX"]              = "Linux";
 $translations["WINDOWS"]            = "Windows";
