@@ -16,7 +16,7 @@ $translations["BUGREPORT"]          = "Send feedback";
 
 # Question
 $translations["QUESTIONS_DESCRIPTION"] = "Before starting, we ask you to give us some simple information about your system. Also we would be pleased if you would tell us how much spare time you have &mdash; so we can explain it in more or less detail.";
-$translations["QUESTION_ONE"]       = "Which operationg system do you use?";
+$translations["QUESTION_ONE"]       = "Which operating system do you use?";
 $translations["LINUX"]              = "Linux";
 $translations["WINDOWS"]            = "Windows";
 $translations["MACOS"]              = "OSX";
