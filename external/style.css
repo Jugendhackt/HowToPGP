@@ -65,6 +65,7 @@ h1.scroll {
 a {
     text-decoration: none;
     color: #2222ff;
+    border-radius: 0px;
 }
 #description {
     width: 800px;
