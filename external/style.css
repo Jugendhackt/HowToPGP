@@ -67,6 +67,15 @@ a {
     color: #2222ff;
     border-radius: 0px;
 }
+img, a img {
+    border: none;
+}
+:focus {
+    outline:none;
+}
+::-moz-focus-inner {
+    border:0;
+} 
 #description {
     width: 800px;
     margin: 0 auto;
