@@ -1,17 +1,15 @@
 # HowToPGP
 
-Ein Projekt von [Jugend Hackt Süd](http://jugendhackt.de/) vom 12.07.2015 bis 15.07.2015
+A ["Jugend hackt"](http://jugendhackt.de/) project.
 
   
 
-Wir wollen die Verschlüsslungsmethode [PGP](http://de.wikipedia.org/wiki/Pretty_Good_Privacy) 
-einfacher und für jeden nutzbar machen.  
-PGP ist besonders sicher, jedoch leider nur schwer zu bedienen bzw. einzurichten. 
+We want to explain [PGP-encryption](http://de.wikipedia.org/wiki/Pretty_Good_Privacy) 
+simple and understandable for everyone. PGP is a very secure way to encrypt your e-mails, but is it not that easy to install and to use. Only by teaching a wide bandwidth of people how to use encryption, we are able to stop mass surveillance.
 
   
 
-**Nur durch Aufklärung im Bereich der Verschlüsselung kann langfristig  
-der allgemeinen Überwachung entgegengewirkt werden!**
+**Our website is available in English and German.**
 
 ![Screenshot](https://raw.githubusercontent.com/Jugendhackt/HowToPGP/master/screenshot.png)
 
