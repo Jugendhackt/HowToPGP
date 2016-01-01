@@ -1,6 +1,6 @@
-# HowToPGP
+# [HowToPGP](http://howtopgp.jugendhackt.de/)
 
-A "[Jugend hackt]"(http://jugendhackt.de/) project.
+A [Jugend hackt] (http://jugendhackt.de/) project.
 
   
 
