@@ -1,6 +1,6 @@
 # HowToPGP
 
-A ["Jugend hackt"](http://jugendhackt.de/) project.
+A "[Jugend hackt]"(http://jugendhackt.de/) project.
 
   
 
