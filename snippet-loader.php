@@ -18,6 +18,10 @@ if($client == "thunderbird") {
     } else if($browser == "chrome"){
         add("mailvelope_install_chrome.html");
     }
+    else{
+        add("mailvelope_install.html");
+    }
+    add("mailvelope_create_keys.html");
 }
 
 if($client != "browser"){        
