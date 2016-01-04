@@ -19,7 +19,7 @@ $translations["QUESTIONS_DESCRIPTION"] = "Um für Sie eine personalisierte Anlei
 $translations["QUESTION_ONE"]       = "Welches Betriebssystem verwenden Sie?";
 $translations["LINUX"]              = "Linux";
 $translations["WINDOWS"]            = "Windows";
-$translations["MACOS"]              = "OSX";
+$translations["MACOS"]              = "OS X";
 
 $translations["QUESTION_TWO"]       = "Welches E-Mail-Programm verwenden Sie?";
 $translations["THUNDERBIRD"]        = "Thunderbird";
