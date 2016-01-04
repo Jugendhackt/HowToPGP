@@ -301,7 +301,6 @@ input[type=range]::-webkit-slider-runnable-track {
     animate: 0.5s;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
     background: #2222cc;
-    border-radius: 1.3p9;
     border-radius: 1.3px;
     border: 0.2px solid #010101;
 }
@@ -338,6 +337,9 @@ input[type=range]::-moz-range-thumb {
     background: #ffffff;
     cursor: pointer;
 }
+input[type=range]::-moz-focus-outer {
+    border: 0;
+    }
 input[type=range]::-ms-track {
     width: 100%;
     height: 8.4px;
