@@ -1,16 +1,17 @@
 <?php
 /*
  * $os, $client, $level, $browser
- * 
+ *
  */
-
-if($client == "thunderbird") {
+  if($client == "thunderbird") {
+  echo "</br></br></br></br>Last modified: ".date("F d Y",filemtime("./strings/descriptions-de/thunderbird_install_w.html"));
     if($os == "windows" || $os == "osx") {
         add("thunderbird_install_w.html");
     } else if ($os == "linux") {
         add("thunderbird_install_l.html");
     }
 } else if($client == "browser") {
+    echo "</br></br></br></br>Last modified: ".date("F d Y",filemtime("./strings/descriptions-de/mailvelope_install_firefox.html"));
     add("not_translated.html");
     add("mailvelope_introduction.html");
     if($browser == "firefox"){
@@ -18,13 +19,9 @@ if($client == "thunderbird") {
     } else if($browser == "chrome"){
         add("mailvelope_install_chrome.html");
     }
-    else{
-        add("mailvelope_install.html");
-    }
-    add("mailvelope_create_keys.html");
 }
 
-if($client != "browser"){        
+if($client != "browser"){
     if($os == "windows") {
         add("gpg4win.html");
     } else if($os == "osx") {
@@ -42,7 +39,7 @@ if($level == "1" || $level == "2") {
 } else {
     add("public_private_key_technical.html");
 }
-if($client != "browser"){   
+if($client != "browser"){
     add("enigmail_create_keys.html");
 }
 
@@ -51,5 +48,5 @@ add("test_email.html");
 add("using_it_right.html");
 
 if($level == "3") {
-    add("web_of_trust.html");
+    add("web_of_thrust.html");
 }
