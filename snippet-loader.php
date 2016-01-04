@@ -51,5 +51,5 @@ add("test_email.html");
 add("using_it_right.html");
 
 if($level == "3") {
-    add("web_of_thrust.html");
+    add("web_of_trust.html");
 }

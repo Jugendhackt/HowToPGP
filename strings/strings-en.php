@@ -9,7 +9,7 @@ $translations["COPYRIGHT"]          = "© Jugend Hackt Süd";
 $translations["DESCRIPTION"]        = "PGP made easy! Read your personal instruction for PGP.";
 $translations["QUESTIONS_TITLE"]    = "Questions";
 $translations["SECTION_1"]          = "Have you ever heard anything about the PGP-encryption?";
-$translations["SECTION_2"]          = "On this page we will explain you how to use PGP on your Computer. Please answer some questions in order to make it possible to deliver specific informaion first!";
+$translations["SECTION_2"]          = "On this page we will explain to you how to use PGP on your Computer. Please answer some questions in order to make it possible to deliver specific information first!";
 $translations["CONTINUE"]           = "Continue";
 $translations["SOURCES"]            = "Sources";
 $translations["BUGREPORT"]          = "Send feedback";
@@ -19,7 +19,7 @@ $translations["QUESTIONS_DESCRIPTION"] = "Before starting, we ask you to give us
 $translations["QUESTION_ONE"]       = "Which operating system do you use?";
 $translations["LINUX"]              = "Linux";
 $translations["WINDOWS"]            = "Windows";
-$translations["MACOS"]              = "OSX";
+$translations["MACOS"]              = "OS X";
 
 $translations["QUESTION_TWO"]       = "Which mail client do you use?";
 $translations["THUNDERBIRD"]        = "Thunderbird";

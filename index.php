@@ -39,7 +39,7 @@ $translations["LANG"] = $lang;
     include("./snippet-loader.php");
     
     $content = str_replace("{CONTENT}", $content, file_get_contents("./templates/description.html"));
-} else  if(@$_GET["page"] == "impressum") {
+} else if(@$_GET["page"] == "impressum") {
     $content = file_get_contents("./templates/impressum.html");
 } else if(@$_GET["page"] == "sources") {
     $content = file_get_contents("./templates/sources.html");
