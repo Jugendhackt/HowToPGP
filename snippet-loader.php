@@ -4,14 +4,12 @@
  *
  */
   if($client == "thunderbird") {
-  echo "</br></br></br></br>Last modified: ".date("F d Y",filemtime("./strings/descriptions-de/thunderbird_install_w.html"));
     if($os == "windows" || $os == "osx") {
         add("thunderbird_install_w.html");
     } else if ($os == "linux") {
         add("thunderbird_install_l.html");
     }
 } else if($client == "browser") {
-    echo "</br></br></br></br>Last modified: ".date("F d Y",filemtime("./strings/descriptions-de/mailvelope_install_firefox.html"));
     add("not_translated.html");
     add("mailvelope_introduction.html");
     if($browser == "firefox"){
@@ -48,5 +46,5 @@ add("test_email.html");
 add("using_it_right.html");
 
 if($level == "3") {
-    add("web_of_thrust.html");
+    add("web_of_trust.html");
 }

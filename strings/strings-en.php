@@ -5,7 +5,7 @@ $translations = array();
 
 # General page Strings
 $translations["PAGE_TITLE"]         = "HowToPGP";
-$translations["COPYRIGHT"]          = "© Jugend Hackt Süd";
+$translations["COPYRIGHT"]          = "© Jugend hackt Süd";
 $translations["DESCRIPTION"]        = "PGP made easy! Read your personal instruction for PGP.";
 $translations["QUESTIONS_TITLE"]    = "Questions";
 $translations["SECTION_1"]          = "Have you ever heard anything about the PGP-encryption?";
@@ -13,6 +13,7 @@ $translations["SECTION_2"]          = "On this page we will explain to you how t
 $translations["CONTINUE"]           = "Continue";
 $translations["SOURCES"]            = "Sources";
 $translations["BUGREPORT"]          = "Send feedback";
+$translations["LAST_MODIFIED"]      = "Last modified: ";
 
 # Question
 $translations["QUESTIONS_DESCRIPTION"] = "Before starting, we ask you to give us some simple information about your system. Also we would be pleased if you would tell us how much spare time you have &mdash; so we can explain it in more or less detail.";

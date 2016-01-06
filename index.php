@@ -26,10 +26,12 @@ $translations["LANG"] = $lang;
     $level   = @$_GET["level"];
     $browser = @$_GET["browser"];
 
+    $added_files = array();
     function add($file) {
-        global $content, $lang;
-        if(file_exists("./strings/descriptions-$lang/$file")) {
+        global $content, $lang, $added_files;
+        if (file_exists("./strings/descriptions-$lang/$file")) {
             $content .= file_get_contents("./strings/descriptions-$lang/$file");
+            $added_files[] = "./strings/descriptions-$lang/$file";
         } else {
             $content .= file_get_contents("./strings/descriptions-$lang/not_translated.html");
         }
@@ -38,7 +40,15 @@ $translations["LANG"] = $lang;
     // Fills $content with snippets:
     include("./snippet-loader.php");
     
+    $most_current_date = 0;
+    foreach ($added_files as $file) {
+        if (filemtime($file) > $most_current_date) {
+            $most_current_date = filemtime($file);
+        }
+    }
+    
     $content = str_replace("{CONTENT}", $content, file_get_contents("./templates/description.html"));
+    $content = str_replace("{LAST_MODIFIED}", date("F d Y", $most_current_date), $content);
 } else if(@$_GET["page"] == "impressum") {
     $content = file_get_contents("./templates/impressum.html");
 } else if(@$_GET["page"] == "sources") {
