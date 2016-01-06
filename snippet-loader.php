@@ -12,6 +12,7 @@
 } else if($client == "browser") {
     add("not_translated.html");
     add("mailvelope_introduction.html");
+    add("mailvelope_requirements.html");
     if($browser == "firefox"){
         add("mailvelope_install_firefox.html");
     } else if($browser == "chrome"){

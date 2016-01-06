@@ -7,6 +7,11 @@ function selectClient(client) {
     $("#question_client").hide(500);
     $("#field_client").val(client);
     if (client == "browser") {
+        if($("#field_os").val() == "windows") {
+            $("#question_browser-ie").show(0);
+        } else {
+            $("#question_browser-ie").hide(0);
+        }
         $("#question_browser").show(500);
     } else {
         $("#question_level").show(500);
@@ -32,12 +37,7 @@ function switchTo(href) {
         window.location.href = href;
     }, 600);
 }
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= 20) {
-        $('h1').addClass('scroll');
-    } else {
-        $('h1').removeClass('scroll');
-    }
-});
+function showInfographic() {
+    $('#main_img').show(500);
+    $('#showmore').hide(500);
+}

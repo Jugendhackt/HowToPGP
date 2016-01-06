@@ -6,17 +6,18 @@ $translations = array();
 # General page Strings
 $translations["PAGE_TITLE"]         = "HowToPGP";
 $translations["COPYRIGHT"]          = "© Jugend hackt Süd";
-$translations["DESCRIPTION"]        = "PGP made easy! Read your personal instruction for PGP.";
+$translations["DESCRIPTION"]        = "Read your personal instruction for PGP";
 $translations["QUESTIONS_TITLE"]    = "Questions";
 $translations["SECTION_1"]          = "Have you ever heard anything about the PGP-encryption?";
-$translations["SECTION_2"]          = "On this page we will explain to you how to use PGP on your Computer. Please answer some questions in order to make it possible to deliver specific information first!";
-$translations["CONTINUE"]           = "Continue";
+$translations["SECTION_2"]          = "On this page we will explain to you how to use PGP on your Computer.<br/ ><br />Please answer some questions in order to make it possible to deliver specific information first!";
+$translations["CONTINUE"]           = "Continue »";
 $translations["SOURCES"]            = "Sources";
 $translations["BUGREPORT"]          = "Send feedback";
 $translations["LAST_MODIFIED"]      = "Last modified: ";
+$translations["MORE_INFO"]          = "More information regarding PGP";
 
 # Question
-$translations["QUESTIONS_DESCRIPTION"] = "Before starting, we ask you to give us some simple information about your system. Also we would be pleased if you would tell us how much spare time you have &mdash; so we can explain it in more or less detail.";
+$translations["QUESTIONS_DESCRIPTION"] = "Before starting, we ask you to give us some simple information so we can generate your personal instruction.";
 $translations["QUESTION_ONE"]       = "Which operating system do you use?";
 $translations["LINUX"]              = "Linux";
 $translations["WINDOWS"]            = "Windows";

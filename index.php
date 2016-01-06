@@ -29,16 +29,30 @@ $translations["LANG"] = $lang;
     $added_files = array();
     function add($file) {
         global $content, $lang, $added_files;
+        $description = "";
         if (file_exists("./strings/descriptions-$lang/$file")) {
-            $content .= file_get_contents("./strings/descriptions-$lang/$file");
+            $description = file_get_contents("./strings/descriptions-$lang/$file");
             $added_files[] = "./strings/descriptions-$lang/$file";
         } else {
-            $content .= file_get_contents("./strings/descriptions-$lang/not_translated.html");
+            $description = file_get_contents("./strings/descriptions-$lang/not_translated.html");
         }
+        if(isset($_GET["debugSnippets"])) {
+            $content .= "[$file]";
+        }
+        $content .= str_replace("{CONTENT}", $description, file_get_contents("./templates/description_block.html"));
     }
     
-    // Fills $content with snippets:
-    include("./snippet-loader.php");
+    if(isset($_GET["debugSnippets"])) {
+        $files = scandir("./strings/descriptions-$lang");
+        foreach($files as $file) {
+            if($file != "." && $file != "..") {
+                add($file);
+            }
+        }
+    } else {
+        // Fills $content with snippets:
+        include("./snippet-loader.php");
+    }
     
     $most_current_date = 0;
     foreach ($added_files as $file) {

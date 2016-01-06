@@ -1,27 +1,27 @@
-<div id="content" style="display:none;">
+<div class="content-box">
 
     <div id="questions_description">
         $(QUESTIONS_DESCRIPTION)
     </div>
 
-    <div id="question_os" class="question">
+    <div id="question_os" class="question text_block">
         <h2>$(QUESTION_ONE)</h2>
-        <div><img onclick="javascript:selectOS('windows');" alt="$(WINDOWS)" src="./media/images/windows.png" />$(WINDOWS)</div>
-        <div><img onclick="javascript:selectOS('osx');" alt="$(MACOS)" src="./media/images/osx.png" />$(MACOS)</div>
-        <div><img onclick="javascript:selectOS('linux');" alt="$(LINUX)" src="./media/images/linux.png" />$(LINUX)</div>
+        <div onclick="javascript:selectOS('windows');"><img alt="$(WINDOWS)" src="./media/images/windows.png" />$(WINDOWS)</div>
+        <div onclick="javascript:selectOS('osx');"><img alt="$(MACOS)" src="./media/images/osx.png" />$(MACOS)</div>
+        <div onclick="javascript:selectOS('linux');"><img alt="$(LINUX)" src="./media/images/linux.png" />$(LINUX)</div>
     </div>
-    <div id="question_client" class="question" style="display:none;">
+    <div id="question_client" class="question text_block" style="display:none;">
         <h2>$(QUESTION_TWO)</h2>
-        <div><img onclick="javascript:selectClient('thunderbird');" alt="$(THUNDERBIRD)" src="./media/images/thunderbird.png" />$(THUNDERBIRD)</div>
-        <div><img onclick="javascript:selectClient('browser');" alt="$(INTERNETBROWSER)" src="./media/images/internetbrowser.png" />$(INTERNETBROWSER)</div>
+        <div onclick="javascript:selectClient('thunderbird');"><img alt="$(THUNDERBIRD)" src="./media/images/thunderbird.png" />$(THUNDERBIRD)</div>
+        <div onclick="javascript:selectClient('browser');"><img alt="$(INTERNETBROWSER)" src="./media/images/internetbrowser.png" />$(INTERNETBROWSER)</div>
     </div>
-    <div id="question_browser" class="question" style="display:none;">
+    <div id="question_browser" class="question text_block" style="display:none;">
         <h2>$(QUESTION_BROWSER)</h2>
-        <div><img onclick="javascript:selectBrowser('ie');" alt="$(IE)" src="./media/images/ie.png" />$(IE)</div>
-        <div><img onclick="javascript:selectBrowser('firefox');" alt="$(FIREFOX)" src="./media/images/firefox.png" />$(FIREFOX)</div>
-        <div><img onclick="javascript:selectBrowser('chrome');" alt="$(CHROME)" src="./media/images/chrome.png" />$(CHROME)</div>
+        <div onclick="javascript:selectBrowser('ie');" id="question_browser-ie"><img alt="$(IE)" src="./media/images/ie.png" />$(IE)</div>
+        <div onclick="javascript:selectBrowser('firefox');"><img alt="$(FIREFOX)" src="./media/images/firefox.png" />$(FIREFOX)</div>
+        <div onclick="javascript:selectBrowser('chrome');"><img alt="$(CHROME)" src="./media/images/chrome.png" />$(CHROME)</div>
     </div>
-    <div id="question_level" class="question" style="display:none;">
+    <div id="question_level" class="question text_block" style="display:none;">
         <h2>$(QUESTION_THREE)</h2>
 
         <form oninput="if(input_range.value=='1')range_output.innerHTML='$(SLIDER_VALUE_1)';if(input_range.value=='2')range_output.innerHTML='$(SLIDER_VALUE_2)';if(input_range.value=='3')range_output.innerHTML='$(SLIDER_VALUE_3)';" name="question_answers">
@@ -30,7 +30,11 @@
         </form>
 
         <br />
+        <br />
+        <br />
+        <br />
         <a href="javascript:submitQuestions();" class="button">$(START_DESCRIPTION)</a>
+        <br />
         <br />
         <br />
     </div>

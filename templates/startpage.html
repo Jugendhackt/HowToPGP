@@ -1,14 +1,22 @@
-<div id="content" class="mainpage">
-  <div>
-    <p style="font-size: 15px;">
-        $(SECTION_1)
-    </p>
-    <p style="font-size: 15px">
-        $(SECTION_2)
-    </p>
-  </div>
+<div class="mainpage content-box">
+    <div>
+        <p id="section1">
+            $(SECTION_1)
+        </p>
+        <p id="section2">
+            $(SECTION_2)
+        </p>
+    </div>
     <br>
     <br>
-    <a href="javascript:switchTo('?page=questions');" class="button">$(CONTINUE)</a><br><br><br>
-    <img src="./media/images/full-infographic-$(LANG).png" alt="fullinfographic" id="main_img"><br><br><br>
+    <br>
+    <a href="?page=questions" class="button">$(CONTINUE)</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a id="showmore" href="javascript:showInfographic();">$(MORE_INFO)</a>
+    <br>
+    <br>
+    <img src="./media/images/full-infographic-$(LANG).png" alt="fullinfographic" id="main_img" style="display: none;">
 </div>

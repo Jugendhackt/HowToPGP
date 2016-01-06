@@ -7,16 +7,39 @@
         <meta http-equiv="language" content="$(LANG)" />
         <meta name="description" content="$(DESCRIPTION)" />
         <link rel="stylesheet" href="./external/minify.php?file=style.css&mime=css" type="text/css" />
+        <link rel="stylesheet" href="./external/minify.php?file=input-range.css&mime=css" type="text/css" />
     </head>
     <body>
-        <a href="./"><h1>$(PAGE_TITLE)</h1></a>
+        <div id="footerwrapper">
+        <div id="title">
+            <div class="content-box">
+                <a href="./">
+                    <h1>$(PAGE_TITLE)</h1>
+                </a>
+                <span>$(DESCRIPTION)</span>
+            </div>
+            <div id="language">
+                <a href="?lang=en">
+                    <img src="./media/images/gb_flag.png" alt="EN"/>
+                </a> 
+                <a href="?lang=de">
+                    <img src="./media/images/de_flag.png" alt="DE" width="40" height="20"/>
+                </a>
+            </div>
+        </div>
         {CONTENT}
         <br /><br />
         <div id="footer">
-            <a href="?page=sources">$(SOURCES)</a> • <a href="?page=impressum">Impressum</a><span style="font-color: #2B2B2B;"> • $(COPYRIGHT) • </span><a href="http://www.jugendhackt.de" target="_blank">Jugend hackt</a> • <a href="https://github.com/Jugendhackt/HowToPGP/issues/new" target="_blank">$(BUGREPORT)</a>
+            <div class="content-box">
+                <a href="?page=sources">$(SOURCES)</a> • 
+                <a href="?page=impressum">Impressum</a> • 
+                $(COPYRIGHT) •
+                <a href="http://www.jugendhackt.de" target="_blank">Jugend hackt</a> • 
+                <a href="https://github.com/Jugendhackt/HowToPGP/issues/new" target="_blank">$(BUGREPORT)</a>
+            </div>
         </div>
-        <div id="language"><a href="?lang=en"><img src="./media/images/gb_flag.png" alt="EN"/></a> <a href="?lang=de"><img src="./media/images/de_flag.png" alt="DE" width="40" height="20"/></a></div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="./external/minify.php?file=site.js&mime=javascript"></script>
+    </div>
     </body>
 </html>
