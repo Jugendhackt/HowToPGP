@@ -62,7 +62,13 @@ $translations["LANG"] = $lang;
     }
     
     $content = str_replace("{CONTENT}", $content, file_get_contents("./templates/description.html"));
+    if ($lang == "de"){
+        setlocale(LC_TIME, 'de_DE@euro', 'de_DE', 'de', 'ge');
+        $content = str_replace("{LAST_MODIFIED}", strftime("%d. %B %Y",  $most_current_date), $content);
+    }
+    else{
     $content = str_replace("{LAST_MODIFIED}", date("F d Y", $most_current_date), $content);
+    }
 } else if(@$_GET["page"] == "impressum") {
     $content = file_get_contents("./templates/impressum.html");
 } else if(@$_GET["page"] == "sources") {
