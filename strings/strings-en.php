@@ -9,12 +9,12 @@ $translations["COPYRIGHT"]          = "© Jugend hackt Süd";
 $translations["DESCRIPTION"]        = "Read your personal instruction for PGP";
 $translations["QUESTIONS_TITLE"]    = "Questions";
 $translations["SECTION_1"]          = "Have you ever heard anything about the PGP-encryption?";
-$translations["SECTION_2"]          = "On this page we will explain to you how to use PGP on your Computer.<br/ ><br />Please answer some questions in order to make it possible to deliver specific information first!";
+$translations["SECTION_2"]          = "On this page we will explain to you how to use PGP on your Computer.<br/ ><br />Please answer some questions in order to make it possible to provide specific information first!";
 $translations["CONTINUE"]           = "Continue »";
 $translations["SOURCES"]            = "Sources";
 $translations["BUGREPORT"]          = "Send feedback";
 $translations["LAST_MODIFIED"]      = "Last modified: ";
-$translations["MORE_INFO"]          = "More information regarding PGP";
+$translations["MORE_INFO"]          = "Learn more about PGP";
 
 # Question
 $translations["QUESTIONS_DESCRIPTION"] = "Before starting, we ask you to give us some simple information so we can generate your personal instruction.";
