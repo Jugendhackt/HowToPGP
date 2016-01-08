@@ -1,7 +1,18 @@
+function setProgess(percent, speed) {
+    if(!speed) {
+        speed = 1;
+    }
+    $("#questions_progress > div").css({
+        width      : percent+"%",
+        transition : 'width '+speed+'s ease-in-out'
+    });
+}
+
 function selectOS(os) {
     $("#question_os").hide(500);
     $("#question_client").show(500);
     $("#field_os").val(os);
+    setProgess(30);
 }
 function selectClient(client) {
     $("#question_client").hide(500);
@@ -13,18 +24,22 @@ function selectClient(client) {
             $("#question_browser-ie").hide(0);
         }
         $("#question_browser").show(500);
+        setProgess(60);
     } else {
         $("#question_level").show(500);
+        setProgess(90);
     }
 }
 function selectBrowser(browser) {
     $("#question_browser").hide(500);
     $("#question_level").show(500);
     $("#field_browser").val(browser);
+    setProgess(90);
 }
 function submitQuestions() {
     $("#question_level").hide(500);
     $("#field_level").val($("#input_range").val());
+    setProgess(100,0.5);
 
     setTimeout(function() {
         $("#question_answers").submit();
