@@ -52,7 +52,3 @@ function switchTo(href) {
         window.location.href = href;
     }, 600);
 }
-function showInfographic() {
-    $('#main_img').show(500);
-    $('#showmore').hide(500);
-}
