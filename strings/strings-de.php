@@ -12,6 +12,7 @@ $translations["SECTION_1"]          = "Hast du schon mal von PGP-Verschlüsselun
 $translations["SECTION_2"]          = "Mit dieser interaktiven Anleitung wollen wir dir erklären, wie du mit Hilfe von PGP deine E-Mails verschlüsseln kannst. Dadurch schützt du deine Kommunikation und wirkst der Massenüberwachung entgegen.<br/ ><br />Doch zuvor: eine kleine Fragerunde, um rechnerspezifische Ergebnisse liefern zu können.";
 $translations["CONTINUE"]           = "Fortfahren »";
 $translations["SOURCES"]            = "Quellen";
+$translations["FSF"]                = "Enigmail Anleitung: ";
 $translations["BUGREPORT"]          = "Feedback senden";
 $translations["LAST_MODIFIED"]      = "Zuletzt aktualisiert: ";
 $translations["MORE_INFO"]          = "Weitere Informationen zu PGP";
