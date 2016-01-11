@@ -15,7 +15,6 @@ $translations["ENIGMAIL_HOWTO"]     = "Enigmail instruction: ";
 $translations["CONTINUE"]           = "Continue »";
 $translations["BUGREPORT"]          = "Send feedback";
 $translations["LAST_MODIFIED"]      = "Last modified: ";
-$translations["MORE_INFO"]          = "Learn more about PGP";
 
 # Question
 $translations["QUESTIONS_DESCRIPTION"] = "Before starting, we ask you to give us some simple information so we can generate your personal instruction.";

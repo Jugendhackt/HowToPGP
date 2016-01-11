@@ -15,7 +15,6 @@ $translations["SOURCES"]            = "Quellen";
 $translations["ENIGMAIL_HOWTO"]     = "Enigmail Anleitung: ";
 $translations["BUGREPORT"]          = "Feedback senden";
 $translations["LAST_MODIFIED"]      = "Zuletzt aktualisiert: ";
-$translations["MORE_INFO"]          = "Weitere Informationen zu PGP";
 
 # Question
 $translations["QUESTIONS_DESCRIPTION"] = "Um eine für dich personalisierte Anleitung erstellen zu können, brauchen wir einige Informationen.";
