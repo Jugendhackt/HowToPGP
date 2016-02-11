@@ -3,7 +3,10 @@
  * $os, $client, $level, $browser
  *
  */
-  if($client == "thunderbird") {
+if($os == "android"){
+  add("apg_install.html");
+}
+  else if($client == "thunderbird") {
     if($os == "windows" || $os == "osx") {
         add("thunderbird_install_w.html");
     } else if ($os == "linux") {
@@ -20,7 +23,7 @@
     }
 }
 
-if($client != "browser"){
+if($client != "browser" AND $os !="android"){
     if($os == "windows") {
         add("gpg4win.html");
     } else if($os == "osx") {

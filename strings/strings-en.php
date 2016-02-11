@@ -22,6 +22,7 @@ $translations["QUESTION_ONE"]       = "Which operating system do you use?";
 $translations["LINUX"]              = "Linux";
 $translations["WINDOWS"]            = "Windows";
 $translations["MACOS"]              = "OS X";
+$translations["ANDROID"]            = "Android";
 
 $translations["QUESTION_TWO"]       = "Which mail client do you use?";
 $translations["THUNDERBIRD"]        = "Thunderbird";

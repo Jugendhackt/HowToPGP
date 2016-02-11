@@ -10,7 +10,13 @@ function setProgess(percent, speed) {
 
 function selectOS(os) {
     $("#question_os").hide(500);
+    if (os != "android") {
     $("#question_client").show(500);
+    }
+    else{
+        $("#question_level").show(500);
+        setProgess(90);
+    }
     $("#field_os").val(os);
     setProgess(30);
 }
