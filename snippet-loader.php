@@ -18,6 +18,8 @@ if($os == "android"){
     add("apg_install_technical.html");
     add("apg_k9_technical.html");
   }
+  add("apg_create_keys.html");
+  add("apg_keyserver.html");
 }
   else if($client == "thunderbird") {
     if($os == "windows" || $os == "osx") {
