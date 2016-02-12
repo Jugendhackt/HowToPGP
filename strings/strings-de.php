@@ -17,7 +17,7 @@ $translations["BUGREPORT"]          = "Feedback senden";
 $translations["LAST_MODIFIED"]      = "Zuletzt aktualisiert: ";
 
 # Question
-$translations["QUESTIONS_DESCRIPTION"] = "Um eine für dich eine personalisierte Anleitung erstellen zu können, brauchen wir einige Informationen.";
+$translations["QUESTIONS_DESCRIPTION"] = "Um für dich eine personalisierte Anleitung erstellen zu können, brauchen wir einige Informationen.";
 $translations["QUESTION_ONE"]       = "Welches Betriebssystem verwendest du?";
 $translations["LINUX"]              = "Linux";
 $translations["WINDOWS"]            = "Windows";
