@@ -15,6 +15,11 @@
         <div onclick="javascript:selectOS('linux');"><img alt="$(LINUX)" src="./media/images/linux.png" />$(LINUX)</div>
         <div onclick="javascript:selectOS('android');"><img alt="$(ANDROID)" src="./media/images/android.png" />$(ANDROID)</div>
     </div>
+    <div id="question_os" class="question text_block">
+        <h2>$(QUESTION_KEYS)</h2>
+        <div onclick="javascript:selectKeys('true');"><img alt="$(KEYS_TRUE)" src="./media/images/keypair.png" />$(KEYS_TRUE)</div>
+        <div onclick="javascript:selectKeys('false');"><img alt="$(KEYS_FALSE)" src="./media/images/nokeypair.png" />$(KEYS_FALSE)</div>
+    </div>
     <div id="question_client" class="question text_block" style="display:none;">
         <h2>$(QUESTION_TWO)</h2>
         <div onclick="javascript:selectClient('thunderbird');"><img alt="$(THUNDERBIRD)" src="./media/images/thunderbird.png" />$(THUNDERBIRD)</div>

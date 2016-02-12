@@ -9,16 +9,22 @@ function setProgess(percent, speed) {
 }
 
 function selectOS(os) {
+    $("#question_keys").hide(500);
     $("#question_os").hide(500);
     if (os != "android") {
     $("#question_client").show(500);
     }
     else{
-        $("#question_level").show(500);
+        $("#question_keys").show(500);
         setProgess(90);
     }
     $("#field_os").val(os);
     setProgess(30);
+}
+function selectKeys(keys) {
+    $("#question_keys").hide(500);
+    $("#question_level").show(500);
+    $("#field_keys").val(keys);
 }
 function selectClient(client) {
     $("#question_client").hide(500);
@@ -35,6 +41,7 @@ function selectClient(client) {
         $("#question_level").show(500);
         setProgess(90);
     }
+    
 }
 function selectBrowser(browser) {
     $("#question_browser").hide(500);
