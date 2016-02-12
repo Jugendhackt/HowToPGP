@@ -4,7 +4,20 @@
  *
  */
 if($os == "android"){
-  add("apg_install.html");
+  add("not_translate.html");
+  if($level != "3"){
+    add("apg_install.html");
+    if($level == "2"){
+      add("apg_k9.html");
+    }
+    else{
+      add("apg_k9_simple.html");
+    }
+  }
+  else{
+    add("apg_install_technical.html");
+    add("apg_k9_technical.html");
+  }
 }
   else if($client == "thunderbird") {
     if($os == "windows" || $os == "osx") {
