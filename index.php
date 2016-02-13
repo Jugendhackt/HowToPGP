@@ -25,6 +25,7 @@ $translations["LANG"] = $lang;
     $client  = @$_GET["client"];
     $level   = @$_GET["level"];
     $browser = @$_GET["browser"];
+    $keys    = @$_GET["keys"];
 
     $added_files = array();
     function add($file) {

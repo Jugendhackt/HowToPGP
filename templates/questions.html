@@ -26,6 +26,11 @@
         <div onclick="javascript:selectBrowser('firefox');"><img alt="$(FIREFOX)" src="./media/images/firefox.png" />$(FIREFOX)</div>
         <div onclick="javascript:selectBrowser('chrome');"><img alt="$(CHROME)" src="./media/images/chrome.png" />$(CHROME)</div>
     </div>
+    <div id="question_keys" class="question text_block" style="display:none;">
+        <h2>$(QUESTION_KEYS)</h2>
+        <div onclick="javascript:selectKeys('false');"><img alt="$(KEYS_FALSE)" src="./media/images/nokeypair.png" />$(KEYS_FALSE)</div>
+        <div onclick="javascript:selectKeys('true');"><img alt="$(KEYS_TRUE)" src="./media/images/keypair.png" />$(KEYS_TRUE)</div>
+    </div>
     <div id="question_level" class="question text_block" style="display:none;">
         <h2>$(QUESTION_THREE)</h2>
 
@@ -51,6 +56,7 @@
         <input type="hidden" name="client" id="field_client">
         <input type="hidden" name="level" id="field_level">
         <input type="hidden" name="browser" id="field_browser">
+        <input type="hidden" name="keys" id="field_keys">
     </form>
 
 </div>

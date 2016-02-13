@@ -40,3 +40,7 @@ $translations["QUESTION_BROWSER"]   = "Welcher Browser?";
 $translations["IE"]                 = "Internet Explorer";
 $translations["FIREFOX"]            = "Firefox";
 $translations["CHROME"]             = "Chrome";
+
+$translations["QUESTION_KEYS"]      = "Besitzt du bereits ein PGP Keypair auf deinem Computer?";
+$translations["KEYS_TRUE"]          = "Ich habe bereits ein PGP Keypair";
+$translations["KEYS_FALSE"]         = "Ich benutze PGP zum ersten mal";
