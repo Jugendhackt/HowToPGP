@@ -15,11 +15,6 @@
         <div onclick="javascript:selectOS('linux');"><img alt="$(LINUX)" src="./media/images/linux.png" />$(LINUX)</div>
         <div onclick="javascript:selectOS('android');"><img alt="$(ANDROID)" src="./media/images/android.png" />$(ANDROID)</div>
     </div>
-    <div id="question_os" class="question text_block">
-        <h2>$(QUESTION_KEYS)</h2>
-        <div onclick="javascript:selectKeys('true');"><img alt="$(KEYS_TRUE)" src="./media/images/keypair.png" />$(KEYS_TRUE)</div>
-        <div onclick="javascript:selectKeys('false');"><img alt="$(KEYS_FALSE)" src="./media/images/nokeypair.png" />$(KEYS_FALSE)</div>
-    </div>
     <div id="question_client" class="question text_block" style="display:none;">
         <h2>$(QUESTION_TWO)</h2>
         <div onclick="javascript:selectClient('thunderbird');"><img alt="$(THUNDERBIRD)" src="./media/images/thunderbird.png" />$(THUNDERBIRD)</div>
@@ -30,6 +25,11 @@
         <div onclick="javascript:selectBrowser('ie');" id="question_browser-ie"><img alt="$(IE)" src="./media/images/ie.png" />$(IE)</div>
         <div onclick="javascript:selectBrowser('firefox');"><img alt="$(FIREFOX)" src="./media/images/firefox.png" />$(FIREFOX)</div>
         <div onclick="javascript:selectBrowser('chrome');"><img alt="$(CHROME)" src="./media/images/chrome.png" />$(CHROME)</div>
+    </div>
+    <div id="question_keys" class="question text_block" style="display:none;">
+        <h2>$(QUESTION_KEYS)</h2>
+        <div onclick="javascript:selectKeys('false');"><img alt="$(KEYS_FALSE)" src="./media/images/nokeypair.png" />$(KEYS_FALSE)</div>
+        <div onclick="javascript:selectKeys('true');"><img alt="$(KEYS_TRUE)" src="./media/images/keypair.png" />$(KEYS_TRUE)</div>
     </div>
     <div id="question_level" class="question text_block" style="display:none;">
         <h2>$(QUESTION_THREE)</h2>
@@ -56,6 +56,7 @@
         <input type="hidden" name="client" id="field_client">
         <input type="hidden" name="level" id="field_level">
         <input type="hidden" name="browser" id="field_browser">
+        <input type="hidden" name="keys" id="field_keys">
     </form>
 
 </div>

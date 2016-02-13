@@ -43,5 +43,5 @@ $translations["FIREFOX"]            = "Firefox";
 $translations["CHROME"]             = "Chrome";
 
 $translations["QUESTION_KEYS"]      = "Do you already have a PGP keypair?";
-$translations["KEYS_TRUE"]          = "I already use PGP on my computer.";
-$translations["KEYS_FALSE"]         = "I am new to PGP.";
+$translations["KEYS_TRUE"]          = "I already use PGP on my computer";
+$translations["KEYS_FALSE"]         = "I am new to PGP";
