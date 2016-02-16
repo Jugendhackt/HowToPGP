@@ -26,6 +26,7 @@
           </div>
         </div>
         <div id="content">
+          <div ng-if="! (questions || result || impressum || sources)" id="startpage_container" ng-include='"include/startpage.html"'></div>
           <div ng-if="questions" id="questions_container" ng-include='"include/questions.html"'></div>
           <div ng-if="result" id="result_container" ng-include='"include/snippnets.html"' class="content-box"></div>
           <div ng-if="impressum" id="impressum_container" ng-include='"include/impressum.html"' class="content-box"></div>

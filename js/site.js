@@ -16,7 +16,7 @@ app.config(['$translateProvider', function ($translateProvider) {
  
 app.controller('MainController', ['$translate', '$scope', function ($translate, $scope) {
    $scope.init = function(){
-     $scope.questions = true;
+     $scope.questions = false;
      $scope.result = false;
      $scope.impressum = false;
      $scope.sources = false;
@@ -112,6 +112,12 @@ app.controller('MainController', ['$translate', '$scope', function ($translate, 
       $scope.impressum = false;
       $scope.sources = false;
   }
+  $scope.showQuestions = function() {
+      $scope.questions = true;
+      $scope.result = false;
+      $scope.impressum = false;
+      $scope.sources = false;
+  }
   $scope.showImpressum = function() {
       $scope.questions = false;
       $scope.result = false;
@@ -127,7 +133,9 @@ app.controller('MainController', ['$translate', '$scope', function ($translate, 
   $scope.getLanguageImageUrl = function(lang) {
       return 'image/'+lang+'_flag.png'
   }
-  
+  $scope.getLocalizedImageUrl = function(prefix) {
+      return 'image/'+prefix+$translate.use()+'.png'
+  }
   $scope.languages = ["en", "de"];
   $scope.textblock_classes = "description_block text_block";
   $scope.init();
