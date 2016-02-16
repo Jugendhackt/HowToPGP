@@ -1,0 +1,45 @@
+<div ng-show="os == 'android'">
+  <div ng-class="textblock_classes" ng-include='getPartial("not_translated")'></div>
+
+  <div ng-class="textblock_classes" ng-show="level == 2 || level == 1" ng-include='getPartial("apg_install")'></div>
+  <div ng-class="textblock_classes" ng-show="level == 2" ng-include='getPartial("apg_k9")'></div>
+  <div ng-class="textblock_classes" ng-show="level == 1" ng-include='getPartial("apg_k9_simple")'></div>
+
+  <div ng-class="textblock_classes" ng-show="level == 3" ng-include='getPartial("apg_install_technical")'></div>
+  <div ng-class="textblock_classes" ng-show="level == 3" ng-include='getPartial("apg_k9_technical")'></div>
+
+  <div ng-class="textblock_classes" ng-include='getPartial("apg_create_keys")'></div>
+  <div ng-class="textblock_classes" ng-include='getPartial("apg_keyserver")'></div>
+</div>
+<div ng-show="client == 'thunderbird'">
+  <div ng-class="textblock_classes" ng-show="os == 'windows' || os == 'osx'" ng-include='getPartial("thunderbird_install_w")'></div>
+  <div ng-class="textblock_classes" ng-show="os == 'linux'" ng-include='getPartial("thunderbird_install_l")'></div>
+</div>
+<div ng-show="client == 'browser'">
+  <div ng-class="textblock_classes" ng-include='getPartial("not_translated")'></div>
+  <div ng-class="textblock_classes" ng-include='getPartial("mailvelope_introduction")'></div>
+  <div ng-class="textblock_classes" ng-include='getPartial("mailvelope_requirements")'></div>
+  <div ng-class="textblock_classes" ng-show="browser == 'firefox'" ng-include='getPartial("mailvelope_install_firefox")'></div>
+  <div ng-class="textblock_classes" ng-show="browser == 'chrome'" ng-include='getPartial("mailvelope_install_chrome")'></div>
+</div>
+<div ng-show="client == 'thunderbird'">
+  <div ng-class="textblock_classes" ng-show="os == 'windows'" ng-include='getPartial("gpg4win")'></div>
+  <div ng-class="textblock_classes" ng-show="os == 'osx'" ng-include='getPartial("gpgtools_m")'></div>
+  <div ng-class="textblock_classes" ng-show="level == 3" ng-include='getPartial("gnupg")'></div>
+  <div ng-class="textblock_classes" ng-include='getPartial("enigmail_thunderbird")'></div>
+</div>
+<div ng-show="level == 1 || level == 2">
+  <div ng-class="textblock_classes" ng-include='getPartial("public_private_key_simple")'></div>
+</div>
+<div ng-show="level == 3">
+  <div ng-class="textblock_classes" ng-include='getPartial("public_private_key_technical")'></div>
+</div>
+<div ng-show="client == 'browser'">
+  <div ng-class="textblock_classes" ng-include='getPartial("enigmail_create_keys")'></div>
+</div>
+<div ng-class="textblock_classes" ng-include='getPartial("keyserver")'></div>
+<div ng-class="textblock_classes" ng-include='getPartial("test_email")'></div>
+<div ng-class="textblock_classes" ng-include='getPartial("using_it_right")'></div>
+<div ng-show="level == 3">
+  <div ng-class="textblock_classes" ng-include='getPartial("web_of_trust")'></div>
+</div>
