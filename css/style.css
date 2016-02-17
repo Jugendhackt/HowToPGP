@@ -57,6 +57,9 @@ div#title span {
     .content-box {
         width: 100% !important;
     }
+    #contentwrapper {
+        padding-bottom: 100px !important;
+    }
 }
 a {
     text-decoration: none;
@@ -118,7 +121,7 @@ a.button:hover {
 #contentwrapper {
     min-height: 100%;
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 67px;
 }
 .text_block {
     margin-top: 20px;
