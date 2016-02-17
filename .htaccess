@@ -1,1 +1,2 @@
-ErrorDocument 404 /HowToPGP/index.php?page=error
+AddType text/cache-manifest .appcache
+

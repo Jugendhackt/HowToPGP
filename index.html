@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html ng-app="HowToApp">
+<html ng-app="HowToApp" manifest="page.appcache">
     <head>
-        <title translate>PAGE_TITLE</title>
+        <title translate>HowToPGP</title>
+        
         <meta charset="UTF-8" />
+        <meta name="description" content="Read your personal instruction for PGP" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" type="text/css" />
         <link rel="stylesheet" href="css/input-range.css" type="text/css" />
@@ -29,7 +32,7 @@
             <div id="content">
               <div ng-if="! (questions || result || impressum || sources)" id="startpage_container" ng-include='"include/startpage.html"'></div>
               <div ng-if="questions" id="questions_container" ng-include='"include/questions.html"'></div>
-              <div ng-if="result" id="result_container" ng-include='"include/snippnets.html"' class="content-box"></div>
+              <div ng-if="result" id="result_container" ng-include='"include/snippets.html"' class="content-box"></div>
               <div ng-if="impressum" id="impressum_container" ng-include='"include/impressum.html"' class="content-box"></div>
               <div ng-if="sources" id="sources_container" ng-include='"include/sources.html"' class="content-box"></div>
             </div>

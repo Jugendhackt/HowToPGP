@@ -7,10 +7,9 @@ app.config(['$translateProvider', function ($translateProvider) {
     prefix: 'locale/',
     suffix: '.json'
   });
-  var defaultLang = navigator.language || navigator.userLanguage;
-  defaultLang = defaultLang.split("-")[0];
-  defaultLang = (defaultLang == 'de' || defaultLang == 'en') ? defaultLang : 'en';
-  $translateProvider.preferredLanguage(defaultLang);
+  var browserLang = navigator.language || navigator.userLanguage;
+  $translateProvider.preferredLanguage(browserLang.split("-")[0]);
+  $translateProvider.fallbackLanguage("en");
   $translateProvider.useLocalStorage();
 }]);
  
