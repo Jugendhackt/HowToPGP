@@ -26,6 +26,7 @@ div#title h1 {
     text-align: left;
     margin-right: 15px;
     display: inline-block;
+    cursor: pointer;
 }
 div#title span {
     font-size: 16px;
@@ -38,11 +39,11 @@ div#title span {
     top: 0px;
     position: absolute;
 }
-#language img {
+#language input {
     height: 20px;
     margin-left: 5px;
 }
-#language img:hover {
+#language input:hover {
     opacity: 0.5;
 }
 .content-box {
@@ -63,6 +64,7 @@ a {
     text-decoration: none;
     color: #2222ff;
     border-radius: 0px;
+    cursor: pointer;
 }
 a:hover {
     text-decoration: underline;
