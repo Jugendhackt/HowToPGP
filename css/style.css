@@ -118,7 +118,7 @@ a.button:hover {
 #contentwrapper {
     min-height: 100%;
     position: relative;
-    padding-bottom: 67px;
+    padding-bottom: 100px;
 }
 .text_block {
     margin-top: 20px;
@@ -183,6 +183,9 @@ a.button:hover {
 }
 .progress-bar {
     background-color: #4285f4;
+}
+.progress-bar > b{
+    padding-left: 5px;
 }
 .animate-container.ng-enter, .animate-container.ng-leave {
     -webkit-transition: 0.5s ease all;
