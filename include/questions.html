@@ -21,7 +21,7 @@
     </div>
     <div ng-if='question == "browser"' id="question_browser" class="question text_block animate-container">
         <h2>{{"QUESTION_BROWSER"|translate}}</h2>
-        <div ng-click="selectBrowser('ie');" id="question_browser-ie"><img alt="{{"IE"|translate}}" src="image/ie.png" />{{"IE"|translate}}</div>
+        <div ng-if='os == "windows"' ng-click="selectBrowser('ie');" id="question_browser-ie"><img alt="{{"IE"|translate}}" src="image/ie.png" />{{"IE"|translate}}</div>
         <div ng-click="selectBrowser('firefox');"><img alt="{{"FIREFOX"|translate}}" src="image/firefox.png" />{{"FIREFOX"|translate}}</div>
         <div ng-click="selectBrowser('chrome');"><img alt="{{"CHROME"|translate}}" src="image/chrome.png" />{{"CHROME"|translate}}</div>
     </div>
