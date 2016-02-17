@@ -7,10 +7,9 @@ app.config(['$translateProvider', function ($translateProvider) {
     prefix: 'locale/',
     suffix: '.json'
   });
-  var defaultLang = navigator.language || navigator.userLanguage;
-  defaultLang = defaultLang.split("-")[0];
-  defaultLang = (defaultLang == 'de' || defaultLang == 'en') ? defaultLang : 'en';
-  $translateProvider.preferredLanguage(defaultLang);
+  var browserLang = navigator.language || navigator.userLanguage;
+  $translateProvider.preferredLanguage(browserLang.split("-")[0]);
+  $translateProvider.fallbackLanguage("en");
   $translateProvider.useLocalStorage();
 }]);
  
@@ -58,11 +57,6 @@ app.controller('MainController', ['$translate', '$scope', function ($translate, 
   $scope.selectClient = function(client) {
       $scope.client = client;
       if (client == "browser") {
-          /*if($("#field_os").val() == "windows") {
-              $("#question_browser-ie").show(0);
-          } else {
-              $("#question_browser-ie").hide(0);
-          }*/
           $scope.showQuestion("browser");
       } else {
           $scope.showQuestion("keys");
