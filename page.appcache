@@ -1,19 +1,20 @@
 CACHE MANIFEST
-# 2015-02-17 16:00aa
+# 2015-02-17 20:30
 
 CACHE:
 image/offline.png
 favicon.ico
 index.html
-js/site.js
-js/angular-cookies.js
-js/angular-translate-loader-static-files.js
+js/angular.min.js
+js/angular-cookies.min.js
+js/angular-animate.min.js.map
+js/angular-translate.js
 js/angular-translate-loader-url.js
+js/angular-translate-loader-static-files.js
 js/angular-translate-storage-cookie.js
 js/angular-translate-storage-local.js
-js/angular-translate.js
-js/angular.min.js
-js/jquery.min.js
+js/angular-ui-bootstrap.js
+js/site.js
 css/style.css
 css/input-range.css
 locale/de.json
