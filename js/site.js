@@ -1,14 +1,15 @@
 var app = angular.module('HowToApp', ["ui.bootstrap", 'ngAnimate', 'ngCookies', 'pascalprecht.translate']);
  
 app.config(['$translateProvider', function ($translateProvider) {
-  $translateProvider.translations('en');
-  $translateProvider.translations('de');
+  $translateProvider.registerAvailableLanguageKeys(['en', 'de'], {
+    'en_*': 'en',
+    'de_*': 'de'
+  })
   $translateProvider.useStaticFilesLoader({
     prefix: 'locale/',
     suffix: '.json'
   });
-  var browserLang = navigator.language || navigator.userLanguage;
-  $translateProvider.preferredLanguage(browserLang.split("-")[0]);
+  $translateProvider.determinePreferredLanguage();
   $translateProvider.fallbackLanguage("en");
   $translateProvider.useLocalStorage();
 }]);
