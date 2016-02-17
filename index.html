@@ -6,17 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" type="text/css" />
         <link rel="stylesheet" href="css/input-range.css" type="text/css" />
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 
-        <script src="js/angular.min.js"></script>
-        <script src="js/angular-cookies.js"></script>
-        <script src="js/angular-translate.js"></script>
-        <script src="js/angular-translate-loader-url.js"></script>
-        <script src="js/angular-translate-loader-static-files.js"></script>
-        <script src="js/angular-translate-storage-cookie.js"></script>
-        <script src="js/angular-translate-storage-local.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular-cookies.min.js"></script>
+        <script type="text/javascript" src="js/angular-animate.min.js"></script>
+        <script type="text/javascript" src="js/angular-translate.js"></script>
+        <script type="text/javascript" src="js/angular-translate-loader-url.js"></script>
+        <script type="text/javascript" src="js/angular-translate-loader-static-files.js"></script>
+        <script type="text/javascript" src="js/angular-translate-storage-cookie.js"></script>
+        <script type="text/javascript" src="js/angular-translate-storage-local.js"></script>
+        <script type="text/javascript" src="js/angular-ui-bootstrap.js"></script>
+        
+
     </head>
     <body ng-controller="MainController">
-        <div id="footerwrapper">
+        <div id="contentwrapper">
             <div id="title">
               <div class="content-box">
                   <h1 translate ng-click="init()">PAGE_TITLE</h1>
@@ -26,24 +31,22 @@
                   <input ng-repeat="lang in languages" type="image" ng-click="changeLanguage(lang)" ng-src="{{getLanguageImageUrl(lang)}}" alt="{{ lang }}" width="40" height="20"></input>
               </div>
             </div>
-            <div id="content">
-              <div ng-if="! (questions || result || impressum || sources)" id="startpage_container" ng-include='"include/startpage.html"'></div>
-              <div ng-if="questions" id="questions_container" ng-include='"include/questions.html"'></div>
-              <div ng-if="result" id="result_container" ng-include='"include/snippnets.html"' class="content-box"></div>
-              <div ng-if="impressum" id="impressum_container" ng-include='"include/impressum.html"' class="content-box"></div>
-              <div ng-if="sources" id="sources_container" ng-include='"include/sources.html"' class="content-box"></div>
-            </div>
-            <div id="footer">
-              <div class="content-box">
-                  <a ng-click="showSources()" translate>SOURCES</a> • 
-                  <a ng-click="showImpressum()" translate>Impressum</a> • 
-                  <span translate>COPYRIGHT</span> •
-                  <a href="http://www.jugendhackt.de" target="_blank">Jugend&nbsp;hackt</a> • 
-                  <a href="https://github.com/Jugendhackt/HowToPGP/issues/new" target="_blank" translate>BUGREPORT</a>
-              </div>
-            </div>
+        <div id="content" ng-include='"include/"+content_include+".html"' class="content-box animate-container">
+          <!--<div ng-if="! (questions || result || impressum || sources)" id="startpage_container" ng-include='"include/startpage.html"'></div>
+          <div ng-if="questions" id="questions_container" ng-include='"include/questions.html"'></div>
+          <div ng-if="result" id="result_container" ng-include='"include/snippnets.html"' class="content-box"></div>
+          <div ng-if="impressum" id="impressum_container" ng-include='"include/impressum.html"' class="content-box"></div>
+          <div ng-if="sources" id="sources_container" ng-include='"include/sources.html"' class="content-box"></div>-->
         </div>
-        <script src="js/jquery.min.js"></script>
+        <div id="footer">
+          <div class="content-box">
+              <a ng-click="showSources()" translate>SOURCES</a> • 
+              <a ng-click="showImpressum()" translate>Impressum</a> • 
+              <span translate>COPYRIGHT</span> •
+              <a href="http://www.jugendhackt.de" target="_blank">Jugend&nbsp;hackt</a> • 
+              <a href="https://github.com/Jugendhackt/HowToPGP/issues/new" target="_blank" translate>BUGREPORT</a>
+          </div>
+        </div>
         <script src="js/site.js"></script>
     </body>
 </html>

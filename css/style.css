@@ -27,6 +27,8 @@ div#title h1 {
     margin-right: 15px;
     display: inline-block;
     cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 div#title span {
     font-size: 16px;
@@ -49,11 +51,7 @@ div#title span {
 .content-box {
     width: 900px;
     margin: 0 auto;
-    display: block;
     padding: 0px 10px;
-}
-#contentwrapper {
-    height: 100%;
 }
 @media screen and (max-width: 900px) {
     .content-box {
@@ -83,7 +81,7 @@ img, a img {
     text-align: center;
     padding: 12px;
     margin-top: 15px;
-    color: white;
+    color: white!important;
     font-size: 18px;
     background-color: #4285f4;
     transition: all 0.1s ease-in-out;
@@ -117,10 +115,10 @@ a.button:hover {
         width: 100%;
     }
 }
-#footerwrapper {
+#contentwrapper {
     min-height: 100%;
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 67px;
 }
 .text_block {
     margin-top: 20px;
@@ -201,4 +199,27 @@ a.button:hover {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+}
+.animate-container.ng-enter, .animate-container.ng-leave {
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -ms-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+}
+ .animate-container.ng-enter {
+    max-height: 0;
+    opacity: 0;
+}
+ .animate-container.ng-enter.ng-enter-active {
+    max-height: 999px;
+    opacity:1;
+}
+ .animate-container.ng-leave {
+    max-height: 999px;
+    opacity:1;
+}
+ .animate-container.ng-leave.ng-leave-active {
+    max-height: 0;
+    opacity:0;
 }

@@ -2,36 +2,35 @@
 
     <div id="questions_description">
         {{"QUESTIONS_DESCRIPTION"|translate}}
+        <p/>
     </div>
     
-    <div id="questions_progress">
-        <div></div>
-    </div>
+    <progressbar max="100" value="progress"><b>{{progress}}%</b></progressbar>
 
-    <div id="question_os" class="question text_block">
+    <div ng-if='question == "os"' id="question_os" class="question text_block animate-container">
         <h2>{{"QUESTION_ONE"|translate}}</h2>
         <div ng-click="selectOS('windows');"><img alt="{{"WINDOWS"|translate}}" src="image/windows.png" />{{"WINDOWS"|translate}}</div>
         <div ng-click="selectOS('osx');"><img alt="{{"MACOS"|translate}}" src="image/osx.png" />{{"MACOS"|translate}}</div>
         <div ng-click="selectOS('linux');"><img alt="{{"LINUX"|translate}}" src="image/linux.png" />{{"LINUX"|translate}}</div>
         <div ng-click="selectOS('android');"><img alt="{{"ANDROID"|translate}}" src="image/android.png" />{{"ANDROID"|translate}}</div>
     </div>
-    <div id="question_client" class="question text_block" style="display:none;">
+    <div ng-if='question == "client"' id="question_client" class="question text_block animate-container">
         <h2>{{"QUESTION_TWO"|translate}}</h2>
         <div ng-click="selectClient('thunderbird');"><img alt="{{"THUNDERBIRD"|translate}}" src="image/thunderbird.png" />{{"THUNDERBIRD"|translate}}</div>
         <div ng-click="selectClient('browser');"><img alt="{{"INTERNETBROWSER"|translate}}" src="image/internetbrowser.png" />{{"INTERNETBROWSER"|translate}}</div>
     </div>
-    <div id="question_browser" class="question text_block" style="display:none;">
+    <div ng-if='question == "browser"' id="question_browser" class="question text_block animate-container">
         <h2>{{"QUESTION_BROWSER"|translate}}</h2>
         <div ng-click="selectBrowser('ie');" id="question_browser-ie"><img alt="{{"IE"|translate}}" src="image/ie.png" />{{"IE"|translate}}</div>
         <div ng-click="selectBrowser('firefox');"><img alt="{{"FIREFOX"|translate}}" src="image/firefox.png" />{{"FIREFOX"|translate}}</div>
         <div ng-click="selectBrowser('chrome');"><img alt="{{"CHROME"|translate}}" src="image/chrome.png" />{{"CHROME"|translate}}</div>
     </div>
-    <div id="question_keys" class="question text_block" style="display:none;">
+    <div ng-if='question == "keys"' id="question_keys" class="question text_block animate-container">
         <h2>{{"QUESTION_KEYS"|translate}}</h2>
         <div ng-click="selectKeys('false');"><img alt="{{"KEYS_FALSE"|translate}}" src="image/nokeypair.png" />{{"KEYS_FALSE"|translate}}</div>
         <div ng-click="selectKeys('true');"><img alt="{{"KEYS_TRUE"|translate}}" src="image/keypair.png" />{{"KEYS_TRUE"|translate}}</div>
     </div>
-    <div id="question_level" class="question text_block" style="display:none;">
+    <div ng-if='question == "level"' id="question_level" class="question text_block animate-container">
         <h2>{{"QUESTION_THREE"|translate}}</h2>
         <input type="range" id="input_range" ng-model="difficulty" max="3" min="1">
         <p id="range_output" translate='SLIDER_VALUE_{{ difficulty }}'></p> 
@@ -46,4 +45,3 @@
     </div>
 
 </div>
-<script>setTimeout(function() {$("#content").show(500);}, 200);</script>
