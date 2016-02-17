@@ -180,26 +180,6 @@ a.button:hover {
     margin-left: 20px;
     margin-bottom: 5px;
 }
-#questions_progress {
-    width: 100%;
-    background: #f1f1f1;
-    border: 1px solid #e5e5e5;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    margin-top: 10px;
-    -webkit-transition: width 2s;
-    transition: width 2s;
-}
-
-#questions_progress > div {
-    width: 1%;
-    background: #4285f4;
-    padding: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
 .animate-container.ng-enter, .animate-container.ng-leave {
     -webkit-transition: 0.5s linear all;
     -moz-transition: 0.5s linear all;
