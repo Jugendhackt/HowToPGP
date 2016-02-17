@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# 2015-02-17 16:00
+# 2015-02-17 16:00aa
 
 CACHE:
 image/offline.png
@@ -53,13 +53,13 @@ include/descriptions-de/thunderbird_install_w.html
 include/descriptions-de/using_it_right.html
 include/descriptions-de/web_of_trust.html
 
-include/descriptions-en/apg_create_keys.html
-include/descriptions-en/apg_install.html
-include/descriptions-en/apg_install_technical.html
-include/descriptions-en/apg_k9.html
-include/descriptions-en/apg_k9_simple.html
-include/descriptions-en/apg_k9_technical.html
-include/descriptions-en/apg_keyserver.html
+#include/descriptions-en/apg_create_keys.html
+#include/descriptions-en/apg_install.html
+#include/descriptions-en/apg_install_technical.html
+#include/descriptions-en/apg_k9.html
+#include/descriptions-en/apg_k9_simple.html
+#include/descriptions-en/apg_k9_technical.html
+#include/descriptions-en/apg_keyserver.html
 include/descriptions-en/enigmail_create_keys.html
 include/descriptions-en/enigmail_thunderbird.html
 include/descriptions-en/gnupg.html
