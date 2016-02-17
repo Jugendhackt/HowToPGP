@@ -134,14 +134,14 @@ a.button:hover {
     transition: all 0.1s ease-in-out;
     background-color: #f1f1f1;
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
 }
 .question > div:hover {
     background-color: #fcfcfc;
 }
 .question > div > img {
-    width: 80px;
-    margin-right: 40px;
+    width: 50px;
+    margin-right: 20px;
     vertical-align: middle;
 }
 #input_range {
@@ -155,6 +155,7 @@ a.button:hover {
 .description_block > h2 {
     font-weight: normal;
     margin-bottom: 15px;
+    margin-top: 5px;
 }
 .description_block p.notice {
     padding: 10px;
@@ -180,26 +181,30 @@ a.button:hover {
     margin-left: 20px;
     margin-bottom: 5px;
 }
+.progress-bar {
+    background-color: #4285f4;
+}
 .animate-container.ng-enter, .animate-container.ng-leave {
-    -webkit-transition: 0.5s linear all;
-    -moz-transition: 0.5s linear all;
-    -ms-transition: 0.5s linear all;
-    -o-transition: 0.5s linear all;
-    transition: 0.5s linear all;
+    -webkit-transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -ms-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    transition: 0.5s ease all;
+    position: relative;
 }
  .animate-container.ng-enter {
-    max-height: 0;
     opacity: 0;
+    top: 999px;
 }
  .animate-container.ng-enter.ng-enter-active {
-    max-height: 999px;
     opacity:1;
+    top: 0px;
 }
  .animate-container.ng-leave {
-    max-height: 999px;
     opacity:1;
+    top: 0px;
 }
  .animate-container.ng-leave.ng-leave-active {
-    max-height: 0;
     opacity:0;
+    top: 999px;
 }
