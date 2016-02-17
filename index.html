@@ -16,30 +16,32 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-local/2.8.1/angular-translate-storage-local.js"></script>
     </head>
     <body ng-controller="MainController">
-        <div id="title">
-          <div class="content-box">
-              <h1 translate ng-click="init()">PAGE_TITLE</h1>
-              <span translate>DESCRIPTION</span>
-          </div>
-          <div id="language">
-              <input  ng-repeat="lang in languages" type="image" ng-click='changeLanguage(lang)' ng-src='{{getLanguageImageUrl(lang)}}'alt="{{ lang }}" width="40" height="20"></input>
-          </div>
-        </div>
-        <div id="content">
-          <div ng-if="! (questions || result || impressum || sources)" id="startpage_container" ng-include='"include/startpage.html"'></div>
-          <div ng-if="questions" id="questions_container" ng-include='"include/questions.html"'></div>
-          <div ng-if="result" id="result_container" ng-include='"include/snippnets.html"' class="content-box"></div>
-          <div ng-if="impressum" id="impressum_container" ng-include='"include/impressum.html"' class="content-box"></div>
-          <div ng-if="sources" id="sources_container" ng-include='"include/sources.html"' class="content-box"></div>
-        </div>
-        <div id="footer">
-          <div class="content-box">
-              <a ng-click="showSources()" translate>SOURCES</a> • 
-              <a ng-click="showImpressum()" translate>Impressum</a> • 
-              <span translate>COPYRIGHT</span> •
-              <a href="http://www.jugendhackt.de" target="_blank">Jugend&nbsp;hackt</a> • 
-              <a href="https://github.com/Jugendhackt/HowToPGP/issues/new" target="_blank" translate>BUGREPORT</a>
-          </div>
+        <div id="footerwrapper">
+            <div id="title">
+              <div class="content-box">
+                  <h1 translate ng-click="init()">PAGE_TITLE</h1>
+                  <span translate>DESCRIPTION</span>
+              </div>
+              <div id="language">
+                  <input  ng-repeat="lang in languages" type="image" ng-click='changeLanguage(lang)' ng-src='{{getLanguageImageUrl(lang)}}'alt="{{ lang }}" width="40" height="20"></input>
+              </div>
+            </div>
+            <div id="content">
+              <div ng-if="! (questions || result || impressum || sources)" id="startpage_container" ng-include='"include/startpage.html"'></div>
+              <div ng-if="questions" id="questions_container" ng-include='"include/questions.html"'></div>
+              <div ng-if="result" id="result_container" ng-include='"include/snippnets.html"' class="content-box"></div>
+              <div ng-if="impressum" id="impressum_container" ng-include='"include/impressum.html"' class="content-box"></div>
+              <div ng-if="sources" id="sources_container" ng-include='"include/sources.html"' class="content-box"></div>
+            </div>
+            <div id="footer">
+              <div class="content-box">
+                  <a ng-click="showSources()" translate>SOURCES</a> • 
+                  <a ng-click="showImpressum()" translate>Impressum</a> • 
+                  <span translate>COPYRIGHT</span> •
+                  <a href="http://www.jugendhackt.de" target="_blank">Jugend&nbsp;hackt</a> • 
+                  <a href="https://github.com/Jugendhackt/HowToPGP/issues/new" target="_blank" translate>BUGREPORT</a>
+              </div>
+            </div>
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="js/site.js"></script>

@@ -54,11 +54,6 @@ div#title span {
 #contentwrapper {
     height: 100%;
 }
-
-#content {
-    padding-bottom: 62px;
-}
-
 @media screen and (max-width: 900px) {
     .content-box {
         width: 100% !important;
@@ -75,10 +70,10 @@ a:hover {
 img, a img {
     border: none;
 }
-:focus {
+*:focus {
     outline: none;
 }
-: : -moz-focus-inner {
+*::-moz-focus-inner {
     border: 0;
 }
  a.button {
@@ -100,7 +95,7 @@ a.button:hover {
     padding: 15px 0px;
     border-top: 1px solid #e5e5e5;
     background-color: #f1f1f1;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
