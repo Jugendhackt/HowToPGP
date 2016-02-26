@@ -9,13 +9,13 @@
 
     <div ng-if='question == "level"' id="question_level" class="question text_block animate-container">
         <h2>{{"QUESTION_THREE"|translate}}</h2>
-        <input type="range" id="input_range" ng-model="difficulty" max="3" min="1">
+        <input type="range" id="input_range" ng-model="difficulty" max="3" min="1" />
         <p id="range_output" translate='SLIDER_VALUE_{{ difficulty }}'></p> 
         <br />
         <br />
         <br />
         <br />
-        <a ng-click="submitQuestions()" class="button">{{"START_DESCRIPTION"|translate}}</a>
+        <a ng-click="submitQuestions(difficulty)" class="button">{{"START_DESCRIPTION"|translate}}</a>
         <br />
         <br />
         <br />
