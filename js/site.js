@@ -69,7 +69,8 @@ app.controller('MainController', ['$translate', '$scope', function ($translate, 
       $scope.showQuestion("keys");
   }
 
-  $scope.submitQuestions = function() {
+  $scope.submitQuestions = function(difficulty) {
+      $scope.difficulty = difficulty;
       $scope.setProgress (100, 0.5);
       $scope.content_include = "snippets";
 
@@ -94,6 +95,7 @@ app.controller('MainController', ['$translate', '$scope', function ($translate, 
      $scope.showQuestion("os");
      $scope.os = "";
      $scope.client = "";
+     $scope.browser = "";
      $scope.keys = "";
      $scope.difficulty = 2;
      $scope.progress = 0;
