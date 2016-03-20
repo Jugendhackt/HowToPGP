@@ -1,7 +1,8 @@
 var app = angular.module('HowToApp', ["ui.bootstrap", 'ngAnimate', 'ngCookies', 'pascalprecht.translate']);
  
 app.config(['$translateProvider', function ($translateProvider) {
-  $translateProvider.registerAvailableLanguageKeys(['en', 'de'], {
+  var supported_languages = ['en', 'de'];
+  $translateProvider.registerAvailableLanguageKeys(supported_languages, {
     'en_*': 'en',
     'de_*': 'de'
   })
@@ -10,8 +11,14 @@ app.config(['$translateProvider', function ($translateProvider) {
     suffix: '.json'
   });
   $translateProvider.determinePreferredLanguage();
+  // set preferred language to english in case an unsupported or invalid
+  // language was determined.
+  if (supported_languages.indexOf($translateProvider.preferredLanguage()) < 0) {
+    $translateProvider.preferredLanguage("en");
+  }
   $translateProvider.fallbackLanguage("en");
   $translateProvider.useLocalStorage();
+  $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
 }]);
  
 app.controller('MainController', ['$translate', '$scope', function ($translate, $scope) {
