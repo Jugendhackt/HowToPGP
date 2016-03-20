@@ -11,7 +11,7 @@
     "INTERNETBROWSER": "No Mailclient",
     "QUESTION_KEYS": "Do you already have a PGP keypair?",
     "QUESTION_ONE": "Which operating system do you use?",
-    "SECTION_2": "On this page we will explain to you how to use PGP on your Computer.<br/ ><br />Please answer some questions in order to make it possible to provide specific information first!",
+    "SECTION_2": "With this interactiv instruction we want to explain you, how to encrypt your e-mails with PGP to protect your communication and help stopping mass surveillance.<br/ ><br />Please answer some questions in order to make it possible to provide specific information first!",
     "QUESTION_THREE": "Which level of difficulty?",
     "DESCRIPTION": "Read your personal instruction for PGP",
     "SLIDER_VALUE_3": "I want to gain technical understanding",

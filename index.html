@@ -34,6 +34,8 @@
                   <input ng-repeat="lang in languages" type="image" ng-click="changeLanguage(lang)" ng-src="{{getLanguageImageUrl(lang)}}" alt="{{ lang }}" width="40" height="20"></input>
               </div>
             </div>
+        <noscript>This Website can not be displayed without Java Script.<br>
+        Diese Seite kann nicht ohne Java Script angezeigt werden.</noscript>
         <div id="content" ng-include='"include/"+content_include+".html"' class="content-box animate-container"></div>
         <div id="footer">
           <div class="content-box">
