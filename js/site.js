@@ -87,6 +87,18 @@ app.controller('MainController', ['$translate', '$scope', '$location', function 
       $scope.content_include = "snippets";
       $location.path("/result");
   }
+
+  $scope.showStartPage = function() {
+      $location.path("");
+      $scope.content_include = "startpage";
+      $scope.os = "";
+      $scope.client = "";
+      $scope.browser = "";
+      $scope.keys = "";
+      $scope.difficulty = 2;
+      $scope.progress = 0;
+  }
+
   $scope.showQuestions = function() {
       $scope.showQuestion("os");
   }
@@ -131,14 +143,7 @@ app.controller('MainController', ['$translate', '$scope', '$location', function 
 
       if (!valid) {
           // no matching path, start from the beginning
-          $location.path("");
-          $scope.content_include = "startpage";
-          $scope.os = "";
-          $scope.client = "";
-          $scope.browser = "";
-          $scope.keys = "";
-          $scope.difficulty = 2;
-          $scope.progress = 0;
+          $scope.showStartPage();
       } else {
           $scope.showQuestion(question);
       }
@@ -148,11 +153,7 @@ app.controller('MainController', ['$translate', '$scope', '$location', function 
       $scope.handlePath();
   });
 
-  $scope.init = function(){
-      $scope.handlePath();
-  }
-
   $scope.languages = ["en", "de"];
   $scope.textblock_classes = "description_block text_block";
-  $scope.init();
+  $scope.handlePath();
 }]);
