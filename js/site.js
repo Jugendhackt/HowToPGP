@@ -21,7 +21,7 @@ app.config(['$translateProvider', function ($translateProvider) {
   $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
 }]);
  
-app.controller('MainController', ['$translate', '$scope', function ($translate, $scope) {
+app.controller('MainController', ['$translate', '$scope', '$location', function ($translate, $scope, $location) {
   $scope.changeLanguage = function (langKey) {
     $translate.use(langKey);
   };
@@ -44,8 +44,13 @@ app.controller('MainController', ['$translate', '$scope', function ($translate, 
           $scope.setProgress(75);
       } else if(next == "level") {
           $scope.setProgress(95);
+      } else {
+          $scope.setProgress(0);
+          next = "os";
       }
       $scope.question = next;
+      $scope.content_include = "questions";
+      $location.path("/" + next);
   }
 
   $scope.selectOS = function(os) {
@@ -80,10 +85,22 @@ app.controller('MainController', ['$translate', '$scope', function ($translate, 
       $scope.difficulty = difficulty;
       $scope.setProgress (100, 0.5);
       $scope.content_include = "snippets";
-
+      $location.path("/result");
   }
+
+  $scope.showStartPage = function() {
+      $location.path("");
+      $scope.content_include = "startpage";
+      $scope.os = "";
+      $scope.client = "";
+      $scope.browser = "";
+      $scope.keys = "";
+      $scope.difficulty = 2;
+      $scope.progress = 0;
+  }
+
   $scope.showQuestions = function() {
-      $scope.content_include = "questions";
+      $scope.showQuestion("os");
   }
   $scope.showImpressum = function() {
       $scope.content_include = "impressum";
@@ -97,17 +114,46 @@ app.controller('MainController', ['$translate', '$scope', function ($translate, 
   $scope.getLocalizedImageUrl = function(prefix) {
       return 'image/'+prefix+$translate.use()+'.png'
   }
-  $scope.init = function(){
-     $scope.content_include = "startpage";
-     $scope.showQuestion("os");
-     $scope.os = "";
-     $scope.client = "";
-     $scope.browser = "";
-     $scope.keys = "";
-     $scope.difficulty = 2;
-     $scope.progress = 0;
-   }
+
+  $scope.handlePath = function() {
+      var question = $location.path().substr(1);
+      var valid = false;
+      switch (question) {
+          case "os":
+              valid = true;
+              break;
+	  case "client":
+              valid = ($scope.os);
+              break;
+	  case "browser":
+              valid = ($scope.os && $scope.client == "browser");
+              break;
+	  case "keys":
+              valid = ($scope.os && ($scope.os == "android" || $scope.client));
+              break;
+	  case "level":
+              valid = ($scope.os && ($scope.os == "android" || $scope.client) && $scope.keys);
+              break;
+          case "result":
+              if ($scope.os && ($scope.os == "android" || $scope.client) && $scope.keys) {
+                  $scope.content_include = "snippets";
+                  return;
+              }
+      }
+
+      if (!valid) {
+          // no matching path, start from the beginning
+          $scope.showStartPage();
+      } else {
+          $scope.showQuestion(question);
+      }
+  }
+
+  $scope.$on('$locationChangeSuccess', function() {
+      $scope.handlePath();
+  });
+
   $scope.languages = ["en", "de"];
   $scope.textblock_classes = "description_block text_block";
-  $scope.init();
+  $scope.handlePath();
 }]);
