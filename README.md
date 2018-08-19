@@ -11,5 +11,5 @@ simple and understandable for everyone. PGP is a very secure way to encrypt your
 
 ![Questions](https://raw.githubusercontent.com/Jugendhackt/HowToPGP/master/questions.gif)
 
-**Our website is currently available in English and German, contact us if you speak another language and want to help us make this tool accessible to more people.**
+**Our website is currently available in English and German, contact us if you speak another language and want to help us make this tool accessible to more people. Especially a plain language translation would be real great.**
 
